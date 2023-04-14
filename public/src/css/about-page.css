@@ -1,0 +1,117 @@
+/* tailwind components */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* necessary css to make page more responsive start */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* necessary css to make page more responsive end */
+
+/* loader css start */
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* loader css end */
+
+/* about section start */
+@media (max-width: 720px) {
+  .about-section-bg {
+    height: 64vh;
+  }
+  .about-section-bg h1 {
+    margin-top: 80vh;
+  }
+}
+/* about section end */
+
+/* letter animation start */
+.letter-anim {
+  animation: typing 1s steps(13) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  /* font-size: 24px; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+/* letter animation end */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- MEDIA QUERIES ----------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* floating image start */
+@media (max-width: 600px) {
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 1380px) {
+}
+/* floating image end */
+
+/* letter animation start */
+@media (max-width: 600px) {
+  .letter-anim {
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: rgba(250, 235, 215, 0.186);
+  }
+}
+/* letter animation end */
+
+
+
+
+
+/* 
+    <!-- fixed images start -->
+    <!-- <img src="logo.png" class="fixed inset-0 lg:inset-auto lg:inset-y-0 lg:left-0 z-10 w-16 h-16"> -->
+
+    <!-- <section class="relative">
+        <img src="image.jpg" class="absolute top-20 left-50 z-10 w-full h-auto lg:w-auto lg:h-auto">
+    </section> -->
+
+    <!-- fixed images end -->
+*/
