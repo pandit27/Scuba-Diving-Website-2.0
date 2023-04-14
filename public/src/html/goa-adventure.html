@@ -23,71 +23,54 @@
 
 <body>
     <!-- page loading animation start -->
-    <!-- <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-white z-50">
+    <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-white z-50">
         <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-20 w-20">
         </div>
-    </div> -->
+    </div>
     <!-- page loading animation end -->
 
     <!-- header start -->
-    <div class="container mx-auto px-4">
-        <nav class="flex justify-between items-center py-4">
-            <a href="index.html" class="text-xl font-bold text-white">Scuba Diving</a>
-            <div class="flex items-center">
-                <button
-                    class="navbar-toggler flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-200 hover:border-gray-200">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="hidden md:block">
-                    <a href="index.html" class="mx-3 text-lg font-medium text-white hover:text-gray-200">Home</a>
-                    <div class="dropdown inline-block relative">
-                        <a href="public/src/html/about.html"
-                            class="mx-3 text-lg font-medium text-white hover:text-gray-200">Goa Tour Package</a>
-                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                            <li class=""><a href="public/src/html/about.html"
-                                    class="rounded-t bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap">Exotic
-                                    Goa Tour Package 4N-5D</a></li>
-                            <li class=""><a href="#"
-                                    class="bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap">Goa Weekend
-                                    Gateway Tour</a></li>
-                            <li class=""><a href="#"
-                                    class="rounded-b bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap">Goa
-                                    Tour 4D-3N Package</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown inline-block relative">
-                        <a href="public/src/html/goa-adventure.html"
-                            class="mx-3 text-lg font-medium text-white hover:text-gray-200">Goa Adventure</a>
-                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                            <li class=""><a href="public/src/html/about.html"
-                                    class="rounded-t bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap">Blog
-                                    Grid</a></li>
-                            <li class=""><a href="#"
-                                    class="rounded-b bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap">Blog
-                                    Detail</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown inline-block relative">
-                        <a href="public/src/html/about.html"
-                            class="mx-3 text-lg font-medium text-white hover:text-gray-200">About Us</a>
-                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                            <li class=""><a href="public/src/html/about.html"
-                                    class="rounded-t bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap">Blog
-                                    Grid</a></li>
-                            <li class=""><a href="#"
-                                    class="rounded-b bg-white hover:bg-gray-100 py-2 px-4 block whitespace-no-wrap">Blog
-                                    Detail</a></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="mx-3 text-lg font-medium text-white hover:text-gray-200">Contact</a>
-                    <a href="#"
-                        class="inline-block py-2 px-4 text-white font-medium bg-blue-500 rounded-lg hover:bg-blue-600">Book
-                        Now</a>
+    <nav x-data="{ isOpen: false }" class="relative bg-white shadow dark:bg-gray-800">
+        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <img class="w-auto h-6 sm:h-7" src="#" alt="Scuba Diving">
+                </a>
+
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden">
+                    <button x-cloak @click="isOpen = !isOpen" type="button"
+                        class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                        aria-label="toggle menu">
+                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        </svg>
+
+                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </nav>
-    </div>
 
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+                class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+                <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                        href="../../../index.html">HOME</a>
+                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                        href="#">SCUBA ADVENTURE</a>
+                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                        href="#">WATER SPORTS</a>
+                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                        href="#">PARTY CRUISE</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- header end -->
 
 
