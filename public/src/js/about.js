@@ -1,10 +1,10 @@
 /* window loader start */
-window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    setTimeout(() => {
-        loader.classList.add("hidden");
-    }, 600);
-});
+// window.addEventListener("load", function () {
+//     const loader = document.getElementById("loader");
+//     setTimeout(() => {
+//         loader.classList.add("hidden");
+//     }, 2000);
+// });
 /* window loader end */
 
 /* header start */
