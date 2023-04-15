@@ -15,6 +15,8 @@
     <!-- swiper control -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- style css -->
     <link rel="stylesheet" href="../css/goa-adventure-page.css">
     <!-- style tag -->
@@ -82,193 +84,380 @@
     </nav>
     <!-- header end -->
 
+    <!-- first section start -->
+    <div class="flex items-center justify-center w-full" style="height: 70vh">
+        <div class="flex items-center justify-center w-full"
+            style="width:80vw; height: 60vh; background-image: url('../../../img/cover4.webp'); background-repeat: no-repeat; background-size: cover; border: 4px solid rgb(234, 228, 228);">
+            <div class="content" style="">
+                <h1>Goa Adventures</h1>
+                <p>Trip to Grand Island Goa</p>
+                <p>Fort Island</p>
+                <p>Biana Beach</p>
+            </div>
+        </div>
+    </div>
+    <!-- first section end -->
 
     <!-- carousel start -->
-    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-        <div class="w-full relative flex items-center justify-center">
-            <button aria-label="slide backward"
-                class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
-                id="prev">
-                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </button>
-            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                <div id="slider"
-                    class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 1</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
+    
+    <!-- carousel end -->
+
+    <!-- pricing section start -->
+    <div x-data="{ 
+        billingType: 'month', 
+        basicPrice: '19',
+        premiumPrice: '29',
+        proPrice: '39'
+    }" class="min-h-full bg-gray-200 pb-12">
+        <div class="w-full bg-blue-900 pt-16 pb-24 text-center">
+            <h4 class="text-2xl text-gray-100">Choose the right plan for you</h4>
+            <p class="text-sm text-gray-100 mt-2">Pricing built for businesses of all sizes. Choose package that suits
+                your needs.</p>
+            <div class="flex items-center justify-center mt-8">
+                <button @click="
+                    billingType = 'month',
+                    basicPrice = '19',
+                    premiumPrice = '29',
+                    proPrice = '39'
+                " class="text-gray-800 px-4 py-2 rounded-tl-lg rounded-bl-lg bg-gray-200"
+                    :class=" billingType === 'month' ? 'bg-blue-300' : 'bg-gray-200' " title="Choose Monthly billing">
+                    Monthly billing
+                </button>
+                <button @click="
+                    billingType = 'year',
+                    basicPrice = '205',
+                    premiumPrice = '313',
+                    proPrice = '421'
+                " class="text-gray-800 px-4 py-2 rounded-tr-lg rounded-br-lg bg-gray-200"
+                    :class=" billingType === 'year' ? 'bg-blue-300' : 'bg-gray-200' " title="Choose Annual billing">
+                    Annual billing
+                </button>
+            </div>
+        </div>
+        <div class="w-full 2xl:w-3/4 flex items-center justify-center px-8 md:px-32 lg:px-16 2xl:px-0 mx-auto -mt-8">
+            <div class="w-full grid grid-cols-1 xl:grid-cols-3 gap-8">
+                <div class="bg-white shadow-2xl rounded-lg py-4">
+                    <p class="text-xl text-center font-bold text-blue-600">Basic</p>
+                    <p class="text-center py-8">
+                        <span class="text-4xl font-bold text-gray-700">
+                            $<span x-text="basicPrice">19</span>
+                        </span>
+                        <span class="text-xs uppercase text-gray-500">
+                            / <span x-text="billingType">month</span>
+                        </span>
+                    </p>
+                    <ul class="border-t border-gray-300 py-8 space-y-6">
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Free Setup Guidance</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Email Support</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">User Management</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Reports</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-gray-300 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-400 capitalize">Unlimited Users</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-gray-300 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-400 capitalize">Data Export</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-gray-300 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-400 capitalize">Automated Workflows</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-gray-300 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-400 capitalize">API Access</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-6">
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150"
+                            title="Purchase">Purchase</a>
                     </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
+                </div>
+                <div class="bg-white shadow-2xl rounded-lg py-4">
+                    <p class="text-xl text-center font-bold text-blue-600">Premium</p>
+                    <p class="text-center py-8">
+                        <span class="text-4xl font-bold text-gray-700">
+                            $<span x-text="premiumPrice">29</span>
+                        </span>
+                        <span class="text-xs uppercase text-gray-500">
+                            / <span x-text="billingType">month</span>
+                        </span>
+                    </p>
+                    <ul class="border-t border-gray-300 py-8 space-y-6">
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Free Setup Guidance</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Email Support</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">User Management</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Reports</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Unlimited Users</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Data Export</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-gray-300 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-400 capitalize">Automated Workflows</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-gray-300 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-400 capitalize">API Access</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-6">
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150"
+                            title="Purchase">Purchase</a>
                     </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
-                            class="object-cover object-center w-full" />
-                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                Catalog 2</h2>
-                            <div class="flex h-full items-end pb-6">
-                                <h3
-                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                    Minimal Interior</h3>
-                            </div>
-                        </div>
+                </div>
+                <div class="bg-white shadow-2xl rounded-lg py-4">
+                    <p class="text-xl text-center font-bold text-blue-600">Pro</p>
+                    <p class="text-center py-8">
+                        <span class="text-4xl font-bold text-gray-700">
+                            $<span x-text="proPrice">39</span>
+                        </span>
+                        <span class="text-xs uppercase text-gray-500">
+                            / <span x-text="billingType">month</span>
+                        </span>
+                    </p>
+                    <ul class="border-t border-gray-300 py-8 space-y-6">
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Free Setup Guidance</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Email Support</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">User Management</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Reports</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Unlimited Users</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Data Export</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">Automated Workflows</span>
+                        </li>
+                        <li class="flex items-center space-x-2 px-8">
+                            <span class="bg-blue-600 rounded-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                            <span class="text-gray-600 capitalize">API Access</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-6">
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150"
+                            title="Purchase">Purchase</a>
                     </div>
                 </div>
             </div>
-            <button aria-label="slide forward"
-                class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
-                id="next">
-                <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </button>
         </div>
     </div>
-    <!-- carousel end -->
-
+    <!-- pricing section end -->
 
 
     <!-- footer start -->
@@ -281,7 +470,7 @@
                 <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
                     <a href="#"
                         class="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg gap-x-3 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                        <span>Sign Up Now</span>
+                        <span>Subscribe Now</span>
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-5 h-5">
