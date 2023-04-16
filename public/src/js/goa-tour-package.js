@@ -24,3 +24,7 @@ window.addEventListener('click', function (event) {
     }
 });
 /* header end */
+
+/* carousel start */
+
+/* carosuel end */

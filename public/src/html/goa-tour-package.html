@@ -10,21 +10,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.2.1/dist/forms.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-0sTmMNPgQnXYhXahDn8j+F/tBmbkw">
     <!-- swiper control -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <!-- Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- font family - Playfair Display -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <!-- style css -->
     <link rel="stylesheet" href="../css/goa-tour-package-page.css">
     <!-- style tag -->
     <style></style>
 </head>
 
-<body class="overflow-y-scroll bg-cover bg-fixed shadow-lg"
-    style="background-image:url('https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=600'); background-position: center -80px;">
+<body class="overflow-y-scroll overflow-x-hidden bg-cover bg-fixed shadow-lg"
+    style="background-image:url('https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704__340.jpg'); background-position: center -80px;">
 
     <!-- page loading animation start -->
     <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-white z-50">
@@ -77,45 +82,177 @@
     </nav>
     <!-- header end -->
 
-    <!-- first section start -->
-    <section class="bg-gray-800 text-gray-100">
-        <div class="container flex flex-col mx-auto lg:flex-row">
-            <div class="w-full lg:w-1/3"
-                style="background-image: url('https://source.unsplash.com/random/640x480'); background-position: center center; background-size: cover;">
+    <!-- hero section start -->
+    <div
+        class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center bg-white">
+        <div class="w-full lg:w-1/2">
+            <div class="lg:max-w-lg">
+                <h1 class="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+                    Experience the Magic of Goa <br> Book Your Dream Vacation
+                </h1>
+
+                <div class="mt-8 space-y-5">
+                    <p class="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+
+                        <span class="mx-2">Adventure Activities</span>
+                    </p>
+
+                    <p class="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+
+                        <span class="mx-2">Transport and Guides</span>
+                    </p>
+
+                    <p class="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+
+                        <span class="mx-2">Reasonable Price</span>
+                    </p>
+                </div>
             </div>
-            <div class="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                    class="w-8 h-8 mb-8 text-violet-400">
-                    <path fill-rule="evenodd"
-                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clip-rule="evenodd"></path>
-                </svg>
-                <h2 class="text-3xl font-semibold leading-none">Modern solutions to all kinds of problems</h2>
-                <p class="mt-4 mb-8 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum rem
-                    amet!</p>
-                <button class="self-start px-10 py-3 text-lg font-medium rounded-3xl bg-violet-400 text-gray-900"
-                    fdprocessedid="702rtg">Get started</button>
+
+            <div
+                class="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-400 focus-within:ring-opacity-40">
+                <form class="flex flex-col lg:flex-row">
+                    <input type="email" placeholder="Enter your phone number"
+                        class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0" />
+
+                    <button type="button"
+                        class="h-10 px-4 py-2 m-1 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400">
+                        Message Us
+                    </button>
+                </form>
             </div>
         </div>
-    </section>
-    <!-- first section end -->
+
+        <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
+            <img class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl"
+                src="https://cdn.pixabay.com/photo/2018/12/18/10/41/india-3882103__340.jpg" alt="glasses photo"
+                onmouseover="this.style.border = '2px solid gray'" onmouseout="this.style.border = 'none'">
+        </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- hr start -->
+    <div class="hr" style="height: 4vh; background: aliceblue; text-align: center;">
+        <span class="relative inline-block">
+            <svg viewBox="0 0 52 24" fill="currentColor"
+                class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                <defs>
+                    <pattern id="a0b40128-6963-4319-aeeb-471e92fa2d74" x="0" y="0" width=".135" height=".30">
+                        <circle cx="1" cy="1" r=".7"></circle>
+                    </pattern>
+                </defs>
+                <rect fill="url(#a0b40128-6963-4319-aeeb-471e92fa2d74)" width="52" height="24"></rect>
+            </svg>
+        </span>
+    </div>
+    <!-- hr end -->
+
+    <!-- goa tour highlights start -->
+    <div class="px-4 py-16 mx-auto w-full md:px-24 lg:px-8 lg:py-20 bg-white" style="width: 100vw;">
+        <div class="max-w-full mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
+                style="font-family: 'Playfair Display', serif; font-weight: 200; word-spacing: 4px; letter-spacing: 1px;">
+
+                Top <span>4</span> Goa <strong style="font-weight: 600;">Tour Highlights</strong>
+            </h2>
+            <img src="https://cdn.pixabay.com/photo/2016/04/12/09/02/sand-1323910__340.jpg" alt=""
+                style="margin: auto;">
+        </div>
+        <div class="max-w-lg space-y-3 sm:mx-auto">
+            <h1 style="text-align: center; font-size: 40px; font-weight: 600;">Our Usp</h1>
+            <p style="font-weight: 400;">
+                WE ARE OFFICIAL GOA TOUR PACKAGE OPERATORS. WE SERVE 2000+ GUESTS EVERY SEASON IN 6 MONTHS ONLY. OUR
+                MISSION IS TO HELP YOU EXPERIENCE THE BEST OF GOA IN LIMITED TIME AT MINIMAL PRICES. PLEASE SURELY COME
+                AND ENJOY YOU BEST TOUR IN GOA.</p>
+            <div
+                class="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+                <div class="mr-2">
+                    <svg class="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8" stroke="currentColor"
+                        viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                </div>
+                <span class="text-gray-800">WE ONLY CHARGE FOR WHAT YOU USE.</span>
+            </div>
+            <div
+                class="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+                <div class="mr-2">
+                    <svg class="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8" stroke="currentColor"
+                        viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                </div>
+                <span class="text-gray-800">WE HAVE INCLUDED GOA'S BEST HIGHLIGHTS TO ENJOY AS PER 2000+ REVIEWS.</span>
+            </div>
+            <div
+                class="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+                <div class="mr-2">
+                    <svg class="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8" stroke="currentColor"
+                        viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                </div>
+                <span class="text-gray-800">WE OFFER HASSLE-FREE AND PRINCELY PACKAGES.
+                </span>
+            </div>
+            <div
+                class="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+                <div class="mr-2">
+                    <svg class="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8" stroke="currentColor"
+                        viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                </div>
+                <span class="text-gray-800">WE OFFER UNBEATABLE PRICES FOR GOA TOUR PACKAGES.</span>
+            </div>
+            <div
+                class="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+                <div class="mr-2">
+                    <svg class="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8" stroke="currentColor"
+                        viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                </div>
+                <span class="text-gray-800">BEST SERVICE GUARUNTEED</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- goa tour highlights end -->
 
     <!-- pricing section start -->
     <div class="min-h-screen from-red-300 to-yellow-200 flex justify-center items-center py-20">
         <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
             <div
                 class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
-                <h3 class="mb-3 text-xl font-bold text-indigo-600">Beginner Friendly</h3>
+                <h3 class="mb-3 text-xl font-bold text-indigo-600">Special Discount</h3>
                 <div class="relative">
-                    <img class="w-full rounded-xl"
-                        src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                        alt="Colors" />
+                    <img class="w-full rounded-xl" src="" alt="image" />
                     <p
                         class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
                         FREE</p>
                 </div>
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Javascript Bootcamp for Absolute
-                    Beginners</h1>
+                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Exotic Goa Tour Package</h1>
                 <div class="my-4">
                     <div class="flex space-x-1 items-center">
                         <span>
@@ -135,7 +272,7 @@
                                     d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </span>
-                        <p>3 Parts</p>
+                        <p>lorem</p>
                     </div>
                     <div class="flex space-x-1 items-center">
                         <span>
@@ -145,19 +282,16 @@
                                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
                         </span>
-                        <p>Vanilla JS</p>
+                        <p>lorem</p>
                     </div>
-                    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Buy
-                        Lesson</button>
+                    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Book Now</button>
                 </div>
             </div>
             <div
                 class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
-                <h3 class="mb-3 text-xl font-bold text-indigo-600">Intermediate</h3>
+                <h3 class="mb-3 text-xl font-bold text-indigo-600">Special Discount</h3>
                 <div class="relative">
-                    <img class="w-full rounded-xl"
-                        src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
-                        alt="Colors" />
+                    <img class="w-full rounded-xl" src="" alt="iamge" />
                     <p
                         class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
                         $12</p>
@@ -165,7 +299,7 @@
                         class="absolute top-0 right-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">
                         %20 Discount</p>
                 </div>
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Write a Gatsby plugin using Typescript
+                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Goa Weekend Trip Package
                 </h1>
                 <div class="my-4">
                     <div class="flex space-x-1 items-center">
@@ -176,7 +310,7 @@
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </span>
-                        <p>1:34:23 Minutes</p>
+                        <p>lorem</p>
                     </div>
                     <div class="flex space-x-1 items-center">
                         <span>
@@ -186,7 +320,7 @@
                                     d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </span>
-                        <p>3 Parts</p>
+                        <p>lorem</p>
                     </div>
                     <div class="flex space-x-1 items-center">
                         <span>
@@ -196,25 +330,21 @@
                                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
                         </span>
-                        <p>TypeScript</p>
+                        <p>lorem</p>
                     </div>
-                    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Start
-                        Watching Now</button>
+                    <a href="#"><button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Book Now</button></a>
                 </div>
             </div>
             <div
                 class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
-                <h3 class="mb-3 text-xl font-bold text-indigo-600">Beginner Friendly</h3>
+                <h3 class="mb-3 text-xl font-bold text-indigo-600">Special Discount</h3>
                 <div class="relative">
-                    <img class="w-full rounded-xl"
-                        src="https://images.unsplash.com/photo-1561835491-ed2567d96913?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
-                        alt="Colors" />
+                    <img class="w-full rounded-xl" src="" alt="Colors" />
                     <p
                         class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
                         $50</p>
                 </div>
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Advanced React Native for
-                    Sustainability</h1>
+                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Explore Goa Tour Package</h1>
                 <div class="my-4">
                     <div class="flex space-x-1 items-center">
                         <span>
@@ -224,7 +354,7 @@
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </span>
-                        <p>1:34:23 Minutes</p>
+                        <p>lorem</p>
                     </div>
                     <div class="flex space-x-1 items-center">
                         <span>
@@ -234,7 +364,7 @@
                                     d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </span>
-                        <p>3 Parts</p>
+                        <p>lorem</p>
                     </div>
                     <div class="flex space-x-1 items-center">
                         <span>
@@ -244,10 +374,9 @@
                                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
                         </span>
-                        <p>Vanilla JS</p>
+                        <p>lorem</p>
                     </div>
-                    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Buy
-                        Lesson</button>
+                    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Book Now</button>
                 </div>
             </div>
         </div>
