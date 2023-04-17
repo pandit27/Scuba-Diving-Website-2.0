@@ -17,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -65,6 +66,8 @@
     <link rel="stylesheet" href="css/counting.css">
     <!-- about css -->
     <link rel="stylesheet" href="css/about.css">
+    <!-- animations css -->
+    <link rel="stylesheet" href="css/animations.css">
 
     <style>
 
@@ -226,18 +229,47 @@
                         </div>
                     </div>
                     <div class="statistics-about col-lg-4" style="background: url('img/i6.webp');">
-                        <div class="statistics">
-                            <div class="statistic">
-                                <h3><span class="number-count" data-count="800">0</span></h3>
-                                <p>Total Clients</p>
+
+                    </div>
+
+                    <div class="container py-4">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6" style="cursor: pointer;">
+                                <div class="counter">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <span class="counter-value">6000</span>
+                                    <h3>Total Customers</h3>
+                                </div>
                             </div>
-                            <div class="statistic">
-                                <h3><span class="number-count" data-count="500">0</span></h3>
-                                <p>Total Reviews</p>
+                            <div class="col-md-3 col-sm-6" style="cursor: pointer;">
+                                <div class="counter blue">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <span class="counter-value">1500</span>
+                                    <h3>Total Reviews</h3>
+                                </div>
                             </div>
-                            <div class="statistic">
-                                <h3><span class="number-count" data-count="10">0</span></h3>
-                                <p>Special Offers</p>
+                            <div class="col-md-3 col-sm-6" style="cursor: pointer;">
+                                <div class="counter blue">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-tag"></i>
+                                    </div>
+                                    <span class="counter-value">80</span>
+                                    <h3>Special Offers</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="cursor: pointer;">
+                                <div class="counter blue">
+                                    <div class="counter-icon">
+                                        <i class="fa fa-water"></i>
+                                    </div>
+                                    <span class="counter-value">50</span>
+                                    <h3>Total Sports & Activities</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -271,6 +303,929 @@
         </section>
         <!-- about section end -->
 
+        <!-- our services start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
+                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp hover:" data-wow-delay="0.2s">
+                        <div class="service-item rounded">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div
+                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Food & Restaurant</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item rounded">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div
+                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Sports & Gaming</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div
+                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Event & Party</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our services end -->
+
+        <!-- popular sports start -->
+        <div class="untree_co-section">
+            <div class="container">
+                <div class="row text-center justify-content-center mb-1">
+                    <div class="col-lg-7">
+                        <h2 class="section-title text-center text-uppercase">Popular Sports</h2>
+                        <p>EXPERIENCE THE THRILL</p>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-3-slider">
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Speed Boat</h3>
+                            </div>
+                            <img src="img/cards/c1.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Jet Skiing</h3>
+                            </div>
+                            <img src="img/cards/c2.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Banana Ride</h3>
+                            </div>
+                            <img src="img/cards/c3.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Parasailing</h3>
+                            </div>
+                            <img src="img/cards/c4.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Bumper Ride</h3>
+                            </div>
+                            <img src="img/cards/c5.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Scuba Diving</h3>
+                            </div>
+                            <img src="img/cards/c6.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Scuba Diving</h3>
+                            </div>
+                            <img src="img/cards/c7.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Scuba Diving</h3>
+                            </div>
+                            <img src="img/cards/c8.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media-thumb" data-fancybox="gallery">
+                            <div class="media-text">
+                                <h3>Snorkelling</h3>
+                            </div>
+                            <img src="img/cards/c9.webp" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popular sports end -->
+
+        <!-- special packages start -->
+        <div class="container-xxl py-1">
+            <div class="container">
+                <div class="mb-4 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="underline-animation text-center text-primary text-uppercase">Scuba Diving in Goa</h6>
+                    <h1 class="mb-1 section-title">SPECIAL <span class="text-primary text-uppercase">PACKAGES</span>
+                    </h1>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star-o fa-2x text-primary"></i>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/i1.webp" alt="">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Goa</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Trip to Grand Island</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i> Special Offers</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/i1.webp" alt="">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Goa</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Fort Island</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i> Special Offers</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/i1.webp" alt="">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Goa</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Dudhsagar Trip</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i> Special Offers</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- special packages end -->
+
+        <!-- bestselling packages start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="mb-4 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Scuba Diving in Andaman</h6>
+                    <h1 class="mb-1">BESTSELLING <span class="text-primary text-uppercase">PACKAGES</span></h1>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star-o fa-2x text-primary"></i>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/i1.webp" alt="">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Andaman</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Andaman</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i> Special Offers</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/i1.webp" alt="">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Andaman</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Neil Island</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i> Special Offers</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/i1.webp" alt="">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Goa</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Party Cruise</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i> Special Offers</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bestselling packages end -->
+
+        <!-- demo 4 start -->
+        <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5">
+                        <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
+                        <h1 class="text-white mb-4">Discover A Brand Luxurious Hotel</h1>
+                        <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+                            magna dolore erat amet</p>
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
+                        <a href="" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video"
+                        style="background-image: url('img/i2.webp') !important; background-size: cover !important; background-repeat: no-repeat !important;">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                                allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- demo 4 end -->
+
+        <!-- demo 6 start -->
+        <div class="offers_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section_title text-center mb-100">
+                            <span>Our Offers</span>
+                            <h3>Ongoing Offers</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_offers">
+                            <div class="about_thumb">
+                                <img class="img-fluid img-zoom-hover" src="img/cards/c1.webp" alt="">
+                            </div>
+                            <h3>Up to 35% savings on Club <br>
+                                rooms and Suites</h3>
+                            <ul>
+                                <li>Luxaries condition</li>
+                                <li>3 Adults & 2 Children size</li>
+                                <li>Sea view side</li>
+                            </ul>
+                            <a href="#" class="book_now">book now</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_offers">
+                            <div class="about_thumb">
+                                <img src="img/cards/c2.webp" alt="">
+                            </div>
+                            <h3>Up to 35% savings on Club <br>
+                                rooms and Suites</h3>
+                            <ul>
+                                <li>Luxaries condition</li>
+                                <li>3 Adults & 2 Children size</li>
+                                <li>Sea view side</li>
+                            </ul>
+                            <a href="#" class="book_now">book now</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                        <div class="single_offers">
+                            <div class="about_thumb">
+                                <img src="img/cards/c4.webp" alt="">
+                            </div>
+                            <h3>Up to 35% savings on Club <br>
+                                rooms and Suites</h3>
+                            <ul>
+                                <li>Luxaries condition</li>
+                                <li>3 Adults & 2 Children size</li>
+                                <li>Sea view side</li>
+                            </ul>
+                            <a href="#" class="book_now">book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- demo 6 end -->
+
         <!-- auto carousel start -->
         <div style="background: linear-gradient(to bottom, rgb(0, 0, 72) 70%, rgb(6 122 168) 50%);
     background-size: 100% 50%; color: white; padding-bottom: 2rem;">
@@ -295,103 +1250,9 @@
         </div>
         <!-- auto carousel end -->
 
-        <!-- pricing start -->
-        <div class="container-fluid my-carousel pricing-section"
-            style="background: url('img/w9.webp'); padding-top: 2rem; padding-bottom: 2rem;">
-            <div class="container-fluid py-3">
-                <div class="container py-3">
-                    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto"
-                        style="max-width: 600px;">
-                        <!-- <h5 class="fw-bold text-uppercase text-para-color margin">Pricing Plans</h5> -->
-                        <h1 class="mb-0 text-white-bg margin">BESTSELLING PACKAGES</h1>
-                    </div>
-                    <section class="pricing-container">
-                        <div class="container">
-                            <div class="row">
-                                <!-- Plus Tier -->
-                                <div class="col-lg-4">
-                                    <div class="card mb-5 mb-lg-0">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
-                                            <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
-                                            <hr>
-                                            <ul class="fa-ul">
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5
-                                                        Users</strong></li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage
-                                                </li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited
-                                                    Public
-                                                    Projects</li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community
-                                                    Access
-                                                </li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited
-                                                    Private
-                                                    Projects</li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated
-                                                    Phone
-                                                    Support</li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Free
-                                                    Subdomain
-                                                </li>
-                                                <li class="text-muted"><span class="fa-li"><i
-                                                            class="fas fa-times"></i></span>Monthly Status
-                                                    Reports</li>
-                                            </ul>
-                                            <div class="d-grid pricing-btn">
-                                                <a href="#" class="btn btn-primary text-uppercase">Button</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Pro Tier -->
-                                <div class="col-lg-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-                                            <h6 class="card-price text-center">$49<span class="period">/month</span>
-                                            </h6>
-                                            <hr>
-                                            <ul class="fa-ul">
-                                                <li><span class="fa-li"><i
-                                                            class="fas fa-check"></i></span><strong>Unlimited
-                                                        Users</strong>
-                                                </li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage
-                                                </li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited
-                                                    Public
-                                                    Projects</li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community
-                                                    Access
-                                                </li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited
-                                                    Private
-                                                    Projects</li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated
-                                                    Phone
-                                                    Support</li>
-                                                <li><span class="fa-li"><i
-                                                            class="fas fa-check"></i></span><strong>Unlimited</strong>
-                                                    Free
-                                                    Subdomains</li>
-                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly
-                                                    Status
-                                                    Reports</li>
-                                            </ul>
-                                            <div class="d-grid pricing-btn">
-                                                <a href="#" class="btn btn-primary text-uppercase">Button</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <!-- pricing end -->
+        <!-- counter start -->
+
+        <!-- counter end -->
 
         <!-- video background start -->
         <div class="ocean-wave-container">
@@ -473,10 +1334,6 @@
             }
         </style>
         <!-- video background end -->
-
-        <!-- counting start -->
-
-        <!-- counting end -->
 
         <!-- footer start -->
         <div class="bg-dark py-3">
@@ -573,7 +1430,7 @@
         <script src="js/a.js"></script>
         <script src="js/counting.js"></script>
         <script src="js/about.js"></script>
-
+        <script src="js/counter.js"></script>
 </body>
 
 </html>
