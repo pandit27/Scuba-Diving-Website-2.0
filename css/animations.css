@@ -1,3 +1,4 @@
+/* img zoom animation start */
 .img-zoom-hover {
   transition: transform 0.5s ease;
 }
@@ -5,3 +6,20 @@
 .img-zoom-hover:hover {
   transform: scale(1.2);
 }
+/* img zoom animation end */
+
+/* parallax background start */
+.parallax-container {
+  height: 400px;
+  position: relative;
+  background-image: url("/img/cover4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+}
+/* parallax background end */
