@@ -647,10 +647,6 @@ video {
   }
 }
 
+/* zoom in animation for carousel start */
 
-/* 
-@media (max-width: 576px) {
-  .about-section {
-    padding: 0;
-  }
-} */
+/* zoom in animation for carousel end */

@@ -149,8 +149,8 @@
                     <div class="nav-item dropdown">
                         <a href="public/src/html/goa-adventure.html" class="nav-link nav-item">GOA ADVENTURE</a>
                         <div class="dropdown-menu m-0">
-                            <a href="public/src/html/about.html" class="dropdown-item">Blog Grid</a>
-                            <a href="#" class="dropdown-item">Blog Detail</a>
+                            <a href="public/src/html/about.html" class="dropdown-item">Scuba Diving</a>
+                            <a href="#" class="dropdown-item">Water Sports</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -168,44 +168,72 @@
         <!-- navbar end -->
 
         <!-- carousel start -->
+        <style>
+            .swiper-slide {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                animation-name: zoom-effect;
+                animation-duration: 18s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes zoom-effect {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.06);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            .swiper-container:not(.swiper-container-horizontal) .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+
         <div class="swiper-container main-slider" id="myCarousel" style="max-height: 80vh;">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slider-bg-position c-anim"
-                    style="background:url('img/i5.webp'); animation: fadeIn 2s; background-size: cover;"
-                    data-hash="slide1">
+                <div class="swiper-slide slider-bg-position c-anim  wow fadeInLeft"
+                    style="background-image: url('img/i5.webp');" data-hash="slide1">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Official Scuba Diving Centre
+                            <h5 class="text-white text-uppercase mb-3 wow slideInLeft" data-wow-delay="0.1s">Official
+                                Scuba Diving Centre
                             </h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Best Scuba Diving Centre in Goa
+                            <h1 class="display-1 text-white mb-md-4 wow slideInRight" data-wow-delay="0.1s">Best Scuba
+                                Diving Centre in Goa
                             </h1>
                             <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">EXPLORE
                                 MORE</a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide slider-bg-position c-anim zoomIn"
-                    style="background:url('img/i7.webp'); animation: fadeIn 2s; background-size: contain;"
-                    data-hash="slide2">
+                <div class="swiper-slide slider-bg-position c-anim wow fadeInLeft"
+                    style="background-image: url('img/i7.webp');" data-hash="slide2">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">CHAT TO BOOK
-                            </h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Water Sports & <br>Scuba Diving
-                                Packages
-                            </h1>
-                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">EXPLORE
+                            <h5 class="text-white text-uppercase mb-3 ">CHAT TO BOOK</h5>
+                            <h1 class="display-1 text-white mb-md-4 ">Water Sports &amp; <br>Scuba Diving
+                                Packages</h1>
+                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 wow zoomInUp"
+                                data-wow-delay="0.4s">EXPLORE
                                 MORE</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination" style="opacity: 0.3;"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-prev" style="opacity: 0.1;"><i class="fa fa-chevron-left"></i></div>
-            <div class="swiper-button-next" style="opacity: 0.1;"><i class="fa fa-chevron-right"></i></div>
         </div>
+
         <!-- carousel end -->
 
         <!-- about section start -->
@@ -274,37 +302,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5 wow fadeInLeft" data-wow-delay="0.1s">
-                    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto"
-                        style="background-color: aliceblue; border-radius: 10px;">
-                        <p style="font-family: 'Marhey', cursive; font-size: 40px;">Our Places</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card-about zoom">
-                            <img src="https://cdn.pixabay.com/photo/2020/01/20/15/47/nature-4780643__340.jpg" alt="Goa">
-                            <div class="card-about-overlay">
-                                <h3>Scuba Diving in Goa</h3>
-                                <a href="#" class="btn btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card-about zoom">
-                            <img src="https://cdn.pixabay.com/photo/2020/04/22/06/18/phi-phi-island-5076128__340.jpg"
-                                alt="Andaman">
-                            <div class="card-about-overlay">
-                                <h3>Scuba Diving in Andaman</h3>
-                                <a href="#" class="btn btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- about section end -->
 
         <!-- our services start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-0">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
@@ -357,20 +360,20 @@
 
         <!-- popular sports start -->
         <div class="untree_co-section wow bounceIn" data-wow-delay="0.2s">
-            <div class="container">
+            <div class="container" style="max-height: fit-content; max-width: fit-content;">
                 <div class="row text-center justify-content-center mb-1">
                     <div class="col-lg-7">
                         <h2 class="section-title text-center text-uppercase">Popular Sports</h2>
                         <p>EXPERIENCE THE THRILL</p>
                     </div>
                 </div>
-                <div class="owl-carousel owl-3-slider">
+                <div class="owl-carousel owl-3-slider" style="cursor: grab;">
                     <div class="item">
                         <div class="media-thumb" data-fancybox="gallery">
                             <div class="media-text">
                                 <h3>Speed Boat</h3>
                             </div>
-                            <img src="img/cards/c1.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c1.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -378,7 +381,7 @@
                             <div class="media-text">
                                 <h3>Jet Skiing</h3>
                             </div>
-                            <img src="img/cards/c2.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c2.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -386,7 +389,7 @@
                             <div class="media-text">
                                 <h3>Banana Ride</h3>
                             </div>
-                            <img src="img/cards/c3.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c3.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -394,7 +397,7 @@
                             <div class="media-text">
                                 <h3>Parasailing</h3>
                             </div>
-                            <img src="img/cards/c4.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c4.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -402,7 +405,7 @@
                             <div class="media-text">
                                 <h3>Bumper Ride</h3>
                             </div>
-                            <img src="img/cards/c5.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c5.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -410,7 +413,7 @@
                             <div class="media-text">
                                 <h3>Scuba Diving</h3>
                             </div>
-                            <img src="img/cards/c6.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c6.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -418,7 +421,7 @@
                             <div class="media-text">
                                 <h3>Scuba Diving</h3>
                             </div>
-                            <img src="img/cards/c7.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c7.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -426,7 +429,7 @@
                             <div class="media-text">
                                 <h3>Scuba Diving</h3>
                             </div>
-                            <img src="img/cards/c8.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c8.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                     <div class="item">
@@ -434,7 +437,7 @@
                             <div class="media-text">
                                 <h3>Snorkelling</h3>
                             </div>
-                            <img src="img/cards/c9.webp" alt="Image" class="img-fluid">
+                            <img src="img/cards/c9.webp" alt="Image" class="img-fluid" style="height: auto;">
                         </div>
                     </div>
                 </div>
@@ -443,7 +446,7 @@
         <!-- popular sports end -->
 
         <!-- special packages start -->
-        <div class="container-xxl py-1">
+        <div class="container-xxl py-0">
             <div class="container">
                 <div class="mb-4 text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="underline-animation text-center text-primary text-uppercase">Scuba Diving in Goa</h6>
@@ -1244,9 +1247,41 @@
         </div>
         <!-- demo 6 end -->
 
+        <!-- our places start -->
+        <div class="container pb-4">
+            <div class="row">
+                <div class="row mt-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto"
+                        style="background-color: aliceblue; border-radius: 10px;">
+                        <p style="font-family: 'Marhey', cursive; font-size: 40px;">Our Places</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-about zoom">
+                            <img src="https://cdn.pixabay.com/photo/2020/01/20/15/47/nature-4780643__340.jpg" alt="Goa">
+                            <div class="card-about-overlay">
+                                <h3>Scuba Diving in Goa</h3>
+                                <a href="#" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-about zoom">
+                            <img src="https://cdn.pixabay.com/photo/2020/04/22/06/18/phi-phi-island-5076128__340.jpg"
+                                alt="Andaman">
+                            <div class="card-about-overlay">
+                                <h3>Scuba Diving in Andaman</h3>
+                                <a href="#" class="btn btn-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our places end -->
+
         <!-- auto carousel start -->
-        <div class="wow zoomInUp" data-wow-delay="0.1s" style="background: linear-gradient(to bottom, rgb(0, 0, 72) 70%, rgb(6 122 168) 50%);
-    background-size: 100% 50%; color: white; padding-bottom: 2rem;">
+        <div class="wow slideInUp pb-4" data-wow-delay="0.1s" style="background: linear-gradient(to bottom, rgb(0, 0, 72) 70%, rgb(6 122 168) 50%);
+    background-size: 100% 50%; color: white;">
             <p style="text-align: center; width: auto;">ANY 5 WATER SPORTS INCLUDED ON SCUBA DIVING COMBO</p>
             <h3 style="text-align: center; color: white;">EXPERIENCE THE THRILL
             </h3>

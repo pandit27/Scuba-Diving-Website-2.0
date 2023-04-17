@@ -3,12 +3,12 @@
 }
 
 .about-section h2 {
-  font-family: cursive;
+  font-family: "Nunito";
   text-align: center;
-  font-size: 36px;
-  color: rgb(169, 73, 73);
+  font-size: 41px;
+  color: rgb(0 0 0);
   margin-bottom: 30px;
-  background: whitesmoke;
+  background: #f6f6f6;
 }
 
 .about-section p {
@@ -170,4 +170,8 @@
   .statistics-about {
     background-size: cover !important;
   }
+}
+
+.btn-tutorial {
+
 }
