@@ -6,502 +6,949 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goa Tour Package</title>
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.2.1/dist/forms.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-b4O4QLHs0nuLwvhO7td0anmr8ETLyDpBDdJzmzvC/XLLXL0JLTFx/tFSGwGdnv7fW1uy8AwdknZQGJZtsnvL6w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-0sTmMNPgQnXYhXahDn8j+F/tBmbkw">
-    <!-- swiper control -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <!-- Alpine JS -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!-- font family - Playfair Display -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <!-- style css -->
-    <link rel="stylesheet" href="../css/goa-tour-package-page.css">
-    <!-- style tag -->
-    <style></style>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="../../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../css/goa-tour-package.css">
 </head>
 
-<body class="overflow-y-scroll overflow-x-hidden bg-cover bg-fixed shadow-lg">
+<body style="background: white;">
 
-    <!-- page loading animation start -->
-    <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-white z-50">
-        <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-20 w-20">
-        </div>
-    </div>
-    <!-- page loading animation end -->
-
-    <!-- header start -->
-    <nav x-data="{ isOpen: false }" class="relative bg-white shadow dark:bg-gray-800">
-        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
-            <div class="flex items-center justify-between">
-                <a href="#">
-                    <img class="w-auto h-6 sm:h-7" src="#" alt="Scuba Diving">
-                </a>
-
-                <!-- Mobile menu button -->
-                <div class="flex lg:hidden">
-                    <button x-cloak @click="isOpen = !isOpen" type="button"
-                        class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-                        aria-label="toggle menu">
-                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
-                        </svg>
-
-                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-                class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
-                <div class="flex flex-col md:flex-row md:mx-6">
-                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
-                        href="../../../index.html">HOME</a>
-                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
-                        href="#">SCUBA ADVENTURE</a>
-                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
-                        href="#">WATER SPORTS</a>
-                    <a class="my-2 text-black transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
-                        href="#">PARTY CRUISE</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- header end -->
-
-    <!-- hero section start -->
-    <div class="px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-24 lg:px-8 lg:py-20 bg-white">
-        <div class="grid gap-10 lg:grid-cols-2">
-            <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-                <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-                    <svg class="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" points=" 8,5 8,1 16,1 16,5" stroke-linejoin="round"></polyline>
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" points="9,15 1,15 1,5 23,5 23,15 15,15" stroke-linejoin="round">
-                        </polyline>
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" points="22,18 22,23 2,23 2,18" stroke-linejoin="round"></polyline>
-                        <rect x="9" y="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" width="6" height="4" stroke-linejoin="round"></rect>
-                    </svg>
-                </div>
-                <div class="max-w-xl mb-6">
-                    <h2
-                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                        Let us handle<br class="hidden md:block" />
-                        your next
-                        <span class="inline-block" style="color: #6824f4;">destination</span>
-                    </h2>
-                    <p class="text-base text-gray-700 md:text-lg">
-                        Enjoy your Stay at Beautiful Beach and Explore the Best Locations in Goa
-                    </p>
-                </div>
-                <div>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Learn more
-                        <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-                            <path
-                                d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="flex items-center justify-center -mx-4 lg:pl-8">
-                <div class="flex flex-col items-end px-3">
-                    <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                        src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Z29hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        alt="" />
-                    <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                        src="https://images.unsplash.com/photo-1625505826757-9776f31d2043?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGdvYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                        alt="" />
-                </div>
-                <div class="px-3">
-                    <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-                        src="https://images.unsplash.com/photo-1591957190515-c7fd9613b4e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGdvYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                        alt="" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- hero section end -->
-
-    <!-- hr start -->
-    <div class="hr" style="height: 4vh; background: aliceblue; text-align: center;">
-        <span class="relative inline-block">
-            <svg viewBox="0 0 52 24" fill="currentColor"
-                class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-                <defs>
-                    <pattern id="a0b40128-6963-4319-aeeb-471e92fa2d74" x="0" y="0" width=".135" height=".30">
-                        <circle cx="1" cy="1" r=".7"></circle>
-                    </pattern>
-                </defs>
-                <rect fill="url(#a0b40128-6963-4319-aeeb-471e92fa2d74)" width="52" height="24"></rect>
-            </svg>
-        </span>
-    </div>
-    <!-- hr end -->
-
-    <!-- goa tour highlights start -->
-    <div class="px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-24 lg:px-8 lg:py-20 "
-        style="background: floralwhite;">
-        <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
-            <div class="flex flex-col justify-center">
-                <div class="max-w-xl mb-6">
-                    <h2
-                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                        Top 4 Goa
-                        <span class="relative px-1">
-                            <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400"></div>
-                            <span class="relative inline-block text-deep-purple-accent-400"
-                                style="accent-color: #6824f4; color: #6824f4; font-style: italic; text-decoration: wavy;">Tour
-                                Highlights</span>
-                        </span>
-                    </h2>
-                    <p class="text-base text-gray-700 md:text-lg">
-                        WE ARE OFFICIAL GOA TOUR PACKAGE OPERATORS. WE SERVE 2000+ GUESTS EVERY SEASON IN 6 MONTHS ONLY.
-                        OUR MISSION IS TO HELP YOU EXPERIENCE THE BEST OF GOA IN LIMITED TIME AT MINIMAL PRICES. PLEASE
-                        SURELY COME AND ENJOY YOU BEST TOUR IN GOA.
-                    </p>
-                </div>
-                <p class="mb-4 text-sm font-bold tracking-widest uppercase">Features</p>
-                <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
-                    <ul class="space-y-3">
-                        <li class="flex">
-                            <span class="mr-1">
-                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
-                                    viewBox="0 0 52 52" style="color: #6824f4;">
-                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                </svg>
-                            </span>
-                            We only charge for what you see.
-                        </li>
-                        <li class="flex">
-                            <span class="mr-1">
-                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
-                                    viewBox="0 0 52 52" style="color: #6824f4;">
-                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                </svg>
-                            </span>
-                            We offer hassle free and best packages.
-                        </li>
-                        <li class="flex">
-                            <span class="mr-1">
-                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
-                                    viewBox="0 0 52 52" style="color: #6824f4;">
-                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                </svg>
-                            </span>
-                            We offer unbeatable prices for Goa Tour Packages
-                        </li>
-                    </ul>
-                    <ul class="space-y-3">
-                        <li class="flex">
-                            <span class="mr-1">
-                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
-                                    viewBox="0 0 52 52" style="color: #6824f4;">
-                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                </svg>
-                            </span>
-                            We have included Goa's best water sports.
-                        </li>
-                        <li class="flex">
-                            <span class="mr-1">
-                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
-                                    viewBox="0 0 52 52" style="color: #6824f4;">
-                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                </svg>
-                            </span>
-                            Beautiful photography places guide.
-                        </li>
-                        <li class="flex">
-                            <span class="mr-1">
-                                <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor"
-                                    viewBox="0 0 52 52" style="color: #6824f4;">
-                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                </svg>
-                            </span>
-                            Best service guarunteed.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                    src="https://images.unsplash.com/photo-1506417685636-8e7995000f52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHBlb3BsZSUyMG9uJTIwYmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    alt="image" />
-            </div>
-        </div>
-    </div>
-    <!-- goa tour highlights end -->
-
-    <!-- pricing section start -->
-    <div class="min-h-screen from-red-300 to-yellow-200 flex justify-center items-center py-20">
-        <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
-            <div
-                class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
-                <h3 class="mb-3 text-xl font-bold text-indigo-600">Special Discount</h3>
-                <div class="relative">
-                    <img class="w-full rounded-xl" src="" alt="image" />
-                    <p
-                        class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
-                        FREE</p>
-                </div>
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Exotic Goa Tour Package</h1>
-                <div class="my-4">
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </span>
-                        <p>1:34:23 Minutes</p>
-                    </div>
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
-                    </div>
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
-                    </div>
-                    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Book
-                        Now</button>
-                </div>
-            </div>
-            <div
-                class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
-                <h3 class="mb-3 text-xl font-bold text-indigo-600">Special Discount</h3>
-                <div class="relative">
-                    <img class="w-full rounded-xl" src="" alt="iamge" />
-                    <p
-                        class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
-                        $12</p>
-                    <p
-                        class="absolute top-0 right-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-tr-lg rounded-bl-lg">
-                        %20 Discount</p>
-                </div>
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Goa Weekend Trip Package
+    <!-- navbar start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0" style="color: #06a3da;">
+                    Scuba Diving
                 </h1>
-                <div class="my-4">
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                fdprocessedid="3pd3i">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="../../../index.html" class="nav-item nav-link active">HOME</a>
+                    <div class="nav-item dropdown">
+                        <a href="public/src/html/goa-tour-package.html" class="nav-link nav-item">GOA TOUR PACKAGE</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="public/src/html/about.html" class="dropdown-item">EXOTIC GOA TOUR PACKAGE 4N-5D</a>
+                            <a href="#" class="dropdown-item">GOA WEEKEND GATEWAY TOUR</a>
+                            <a href="#" class="dropdown-item">GOA TOUR 4D-3N PACKAGE</a>
+                        </div>
                     </div>
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
+                    <div class="nav-item dropdown">
+                        <a href="public/src/html/goa-adventure.html" class="nav-link nav-item">GOA ADVENTURE</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="public/src/html/about.html" class="dropdown-item">Scuba Diving</a>
+                            <a href="#" class="dropdown-item">Water Sports</a>
+                        </div>
                     </div>
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
+                    <div class="nav-item dropdown">
+                        <a href="public/src/html/about.html" class="nav-link nav-item">ABOUT US</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="public/src/html/about.html" class="dropdown-item">Blog Grid</a>
+                            <a href="#" class="dropdown-item">Blog Detail</a>
+                        </div>
                     </div>
-                    <a href="#"><button
-                            class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Book
-                            Now</button></a>
+                    <a href="public/src/html/contact.html" class="nav-item nav-link">CONTACT</a>
+                </div>
+                <a href="#" class="btn btn-primary py-2 px-4 ms-3">BOOK NOW</a>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- video bg start -->
+        <header>
+            <div class="overlay"></div>
+
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="../../../video/goa.mp4" type="video/mp4">
+            </video>
+
+            <!-- The header content -->
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 m-auto text-white d-flex flex-column gap-2">
+                        <h1 class="display-3 text-white">GOA</h1>
+                        <p class="lead mb-0 text-white">Enjoy the beauty of Goa</p>
+                        <a href="#" class="btn btn-primary py-2 px-4"
+                            style="width: fit-content; margin: auto; margin-top: 2rem;">BOOK NOW</a>
+                    </div>
                 </div>
             </div>
+        </header>
+
+        <section class="my-5 mx-5">
             <div
-                class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
-                <h3 class="mb-3 text-xl font-bold text-indigo-600">Special Discount</h3>
-                <div class="relative">
-                    <img class="w-full rounded-xl" src="" alt="Colors" />
-                    <p
-                        class="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">
-                        $50</p>
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem;">
+                <h1 class="text-uppercase">Top 4 Goa <span style="font-weight: 600;">tour highlights</span></h1>
+                <div>
+                    <a href="#"><img src="https://cdn.pixabay.com/photo/2017/10/10/07/48/beach-2836300__340.jpg"
+                            alt="goa image" class="img-fluid" style="width: auto; height: 40vh;"></a>
+                    <div
+                        style="display: flex; flex-direction: column; position: relative; bottom: 12rem; left: 1rem; color: white;background: #8698ad62; width: fit-content; border-radius: 1rem;">
+                        <p>For Best</p>
+                        <p>Goa Tour Packages</p>
+                        <p>Click Here</p>
+                    </div>
                 </div>
-                <h1 class="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">Explore Goa Tour Package</h1>
-                <div class="my-4">
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
+                <h2>Our USP</h2>
+                <p class="a1" style="text-align: center; width: 45vw; font-family: 'Poppins', sans-serif; font-size: 15px;">WE ARE
+                    OFFICIAL GOA TOUR
+                    PACKAGE OPERATORS. WE SERVE 2000+
+                    GUESTS EVERY SEASON IN 6 MONTHS ONLY. OUR MISSION IS TO HELP YOU EXPERIENCE THE BEST OF GOA IN
+                    LIMITED TIME AT MINIMAL PRICES. PLEASE SURELY COME AND ENJOY YOU BEST TOUR IN GOA.</p>
+                <div style="margin-right: 2rem; font-family: 'Poppins', sans-serif;">
+                    <ul style="list-style: none;font-size: 14px;">
+                        <li><i class="fa fa-money-bill"></i> WE ONLY CHARGE FOR WHAT YOU USE.</li>
+                        <hr>
+                        <li><i class="fa fa-tag"></i> WE HAVE INCLUDED GOA'S BEST HIGHLIGHTS TO ENJOY AS PER
+                            2000+ REVIEWS.</li>
+                        <hr>
+                        <li><i class="fa fa-dollar-sign"></i> WE OFFER HASSLE-FREE AND PRINCELY PACKAGES.</li>
+                        <hr>
+                        <li><i class="fa fa-coins"></i> WE OFFER UNBEATABLE PRICES FOR GOA TOUR PACKAGES.</li>
+                        <hr>
+                        <li><i class="fa fa-award"></i> BEST SERVICE GUARUNTEED</li>
+                        <hr>
+                        <li><i class="fa fa-helicopter"></i> WE ALSO HELP IN BOOKING FLIGHTS AT BEST PRICE. FLIGHTS TO
+                            GOA FROM ALL
+                            INDIA.
+                        </li>
+                        <a href="#" class="btn btn-primary" style="margin-top: 15px;">ENQUIRE FOR FREE</a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- video bg end -->
+
+        <!-- hero section start -->
+        <div class="hero-section"
+            style="height: 50vh; background: url('https://images.unsplash.com/photo-1584111728495-7d9599602355?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGdvYSUyMGlzbGFuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60') no-repeat; background-size: cover;">
+
+        </div>
+        <!-- hero section end -->
+
+        <!-- popular goa tour packages start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="mb-4 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="mb-1">POPULAR GOA TOUR <span class="text-primary text-uppercase">PACKAGES</span></h1>
+                    <h6 class="section-title text-center text-black-50 text-uppercase"
+                        style="color: black; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        CHOOSE BEST GOA EXPERIENCE AND BOOK YOUR TOUR IN GOA. CUSTOMISE YOUR PACKAGE ACCORDING TO YOUR
+                        NEEDS. TALK TO YOUR TRIP MANAGER FOR FURTHER QUERIES.</h6>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star fa-2x text-primary"></i>
+                    <i class="mb-1 fa fa-star-o fa-2x text-primary"></i>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/andaman_scuba_diving.jpg"
+                                    alt="andaman scuba diving">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Andaman</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Andaman</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <br>
+                                        <span>284 reviews</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i>
+                                        Special Offer</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded text-white py-2 px-4" href="">Know More</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""
+                                        style="color: white !important; background: #d5ae82; border: none;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/andaman_scuba_diving.jpg"
+                                    alt="andaman scuba diving">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Andaman</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Andaman</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <br>
+                                        <span>284 reviews</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i>
+                                        Special Offer</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded text-white py-2 px-4" href="">Know More</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""
+                                        style="color: white !important; background: #d5ae82; border: none;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mb-1.5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
-                        </span>
-                        <p>lorem</p>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/andaman_scuba_diving.jpg"
+                                    alt="andaman scuba diving">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Andaman</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Andaman</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <br>
+                                        <span>284 reviews</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i>
+                                        Special Offer</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded text-white py-2 px-4" href="">Know More</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""
+                                        style="color: white !important; background: #d5ae82; border: none;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="mt-4 text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">Book
-                        Now</button>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/andaman_scuba_diving.jpg"
+                                    alt="andaman scuba diving">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Andaman</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Andaman</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <br>
+                                        <span>284 reviews</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i>
+                                        Special Offer</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded text-white py-2 px-4" href="">Know More</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""
+                                        style="color: white !important; background: #d5ae82; border: none;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/andaman_neil_island.webp"
+                                    alt="andaman neil island">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Andaman</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Scuba At Neil Island</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <br>
+                                        <span>284 reviews</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i>
+                                        Special Offer</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded text-white py-2 px-4" href="">Know More</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""
+                                        style="color: white !important; background: #d5ae82; border: none;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid img-zoom-hover" src="img/cruise1.webp" alt="party cruise">
+                                <small
+                                    class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4"><i
+                                        class="fa fa-map-marker-alt"></i> Goa</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0 text-uppercase">Party Cruise</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <br>
+                                        <span>284 reviews</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
+                                        <span>₹ </span>5,500
+                                    </h2>
+                                </div>
+                                <div class="d-flex mb-3" style="gap: 4px;">
+                                    <small class="border-end me-3 pe-3"><i
+                                            class="fa fa-dollar-sign text-primary me-2"></i>
+                                        Special Offer</small>
+                                </div>
+                                <ul style="list-style: none; padding-left: 0; color: #8698ad; font-weight: 100;">
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-map-marker-alt"></i>
+                                        North Bay Island, Andaman
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-swimmer"></i>
+                                        No Swimming Skills Required
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-male"></i>
+                                        Best For Beginners
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-globe-americas"></i>
+                                        Scuba Diving At Andaman Island
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Scuba diving training by PADI dive master
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Dive Master accompany you underwater
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fas fa-anchor"></i>
+                                        Boat Ride to Dive location
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-camera"></i>
+                                        Photos & videos underwater (Go Pro 10 camera underwater)
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-ship"></i>
+                                        Boat Trip
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-text-height"></i>
+                                        Maximum Depth 12 meters
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-certificate"></i>
+                                        Certified Scuba Trainer
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-car"></i>
+                                        Free Pick up/drop
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class=" fa fa-money-bill"></i>
+                                        Pre-Book it on 15% Discount
+                                    </li>
+                                    <li style="padding-bottom: 6px;">
+                                        <i class="fas fa-check" style="padding-right: 8px; color: #d5ae82;"></i>
+                                        <i class="fa fa-dollar-sign"></i>
+                                        Booking Amount is ₹ 1,000/person
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded text-white py-2 px-4" href="#">Know
+                                        More</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#"
+                                        style="color: white !important; background: #d5ae82; border: none;">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- pricing section end -->
+        <!-- bestselling packages end -->
 
-    <!-- footer start -->
-    <footer class="bg-white dark:bg-gray-900">
-        <div class="container px-6 py-12 mx-auto">
-            <div class="md:flex md:-mx-3 md:items-center md:justify-between">
-                <h1 class="text-xl font-semibold tracking-tight text-gray-800 md:mx-3 xl:text-2xl dark:text-white">
-                    Subscribe our newsletter to get update.</h1>
 
-                <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
-                    <a href="#"
-                        class="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg gap-x-3 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                        <span>Subscribe Now</span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700">
-
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Home</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">About
-                            Us</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Contact
-                            Us</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">FAQ</a>
+        <!-- footer start -->
+        <div class="bg-dark py-3">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="widgets-section">
                     </div>
                 </div>
-
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Goa Packages</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Scuba
-                            Diving</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Water
-                            Sports Activites</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Goa
-                            Tour Package</a>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Goa Activities</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Water
-                            Sports</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Party
-                            Cruise</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Special
-                            Offers</a>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Contact Us</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">+918851118623</a>
-                        <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">info@adress.com</a>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700">
-
-            <div class="flex flex-col items-center justify-between sm:flex-row">
-                <a href="#">
-                    <img class="w-auto h-7" src="#" alt="logo">
-                </a>
-
-                <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">© Copyright 2023. All Rights Reserved.
-                </p>
             </div>
         </div>
-    </footer>
-    <!-- footer end -->
+        <footer class="bg-light py-5">
+            <div class="container">
+                <div class="row">
 
-    <script src="../js/goa-tour-package.js"></script>
+                    <!--Column-->
+                    <div class="col-md-4">
+                        <div class="logo mb-4">
+                            <a href="#"><img src="images/scubalogo.webp" alt=""></a>
+                        </div>
+                        <div class="info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt me-3"></i>Scuba Adventure,
+                                    Calangute Circle, Goa 403516
+                                </li>
+                                <li><i class="fas fa-phone me-3"></i>Call us <a href="tel:9625358429">9625358429</a>
+                                </li>
+                                <li><i class="fas fa-envelope me-3"></i><a
+                                        href="mailto:info@scubadivingadventure.in">info@scubadivingadventure.in</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="col-md-4">
+                        <h4 class="mb-4">Popular Goa Packages</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Scuba Diving in Goa</a></li>
+                            <li><a href="#">Goa Watersports Activities</a></li>
+                            <li><a href="#">Goa Tour Packages</a></li>
+                            <li><a href="#">Goa Weekend Gateway</a></li>
+                            <li><a href="#">Goa Tour 4D-3N package</a></li>
+                            <li><a href="#">FAQ Goa</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Column-->
+                    <div class="col-md-4">
+                        <h4 class="mb-4">Andaman Tour Packages</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Andaman
+                                    Activities</a></li>
+                            <li><a href="#">Scubadiving in Andaman</a>
+                            </li>
+                            <li><a href="#">Andaman Tour
+                                    Package</a></li>
+                            <li><a href="#">Neil Island
+                                    Tour</a></li>
+                            <li><a href="#">Havelock
+                                    Island Tour</a></li>
+                            <li><a href="#">Honeymoon Tour
+                                    Package</a></li>
+                            <li><a href="#">Explore the Andaman</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 scubadivingcenter. All Rights Reserved.</p>
+                <p>Terms Of Use & Private Policy</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../lib/wow/wow.min.js"></script>
+        <script src="../../../lib/easing/easing.min.js"></script>
+        <script src="../../../lib/waypoints/waypoints.min.js"></script>
+        <script src="../../../lib/counterup/counterup.min.js"></script>
+        <script src="../../../lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- javascript script src -->
+        <script src="../../../js/main.js"></script>
+        <script src="../../../js/dragging_carousel.js"></script>
+        <script src="../../../js/owl-carousel.js"></script>
+        <script src="../../../js/chatbot.js"></script>
+        <script src="../../../js/helper.js"></script>
+        <script src="../../../js/a.js"></script>
+        <script src="../../../js/about.js"></script>
+        <script src="../../../js/counter.js"></script>
 </body>
 
 </html>
