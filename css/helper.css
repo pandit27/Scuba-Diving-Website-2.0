@@ -582,8 +582,6 @@
 
 /* parallax bg start */
 .parallax-bg {
-  /* width: 100%;
-  height: 100%; */
   background-image: url("../img/i1.webp");
   background-size: cover;
   background-position: center;
