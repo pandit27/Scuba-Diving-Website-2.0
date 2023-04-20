@@ -703,3 +703,60 @@ video {
   }
 }
 /* video background end */
+
+/* service start */
+.section-div:hover {
+  background-color: #06a3da !important;
+  transition: 0.5s;
+}
+
+.section-div:hover p,
+.section-div:hover i {
+  color: white !important;
+  transition: 0.5s;
+}
+
+.section-p:hover i {
+  color: white !important;
+  transition: 0.5s;
+}
+
+.service-item {
+  height: 320px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+}
+
+.service-item:hover {
+  background: var(--primary);
+}
+
+.section-i:hover {
+  color: white !important;
+}
+
+.service-item .service-icon {
+  margin: 0 auto 30px auto;
+  width: 65px;
+  height: 65px;
+  transition: 0.5s;
+}
+
+.service-item i,
+.service-item h5,
+.service-item p {
+  transition: 0.5s;
+}
+
+.service-item:hover i,
+.service-item:hover h5,
+.service-item:hover p {
+  color: #ffffff;
+}
+/* service end */
