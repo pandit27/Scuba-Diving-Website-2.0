@@ -19,8 +19,6 @@
 }
 
 .statistics {
-  /* background-color: #faf4f4;
-    border: 2px solid rgba(255, 0, 0, 0.136); */
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -28,10 +26,8 @@
 }
 
 .statistics-about {
-  /* background: url("img/i6.webp"); */
   background-size: contain !important;
   background-repeat: no-repeat !important;
-  /* width: 100%; */
 }
 
 .statistic {
@@ -170,8 +166,4 @@
   .statistics-about {
     background-size: cover !important;
   }
-}
-
-.btn-tutorial {
-
 }
