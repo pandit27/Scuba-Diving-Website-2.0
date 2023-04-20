@@ -1,67 +1,73 @@
-/* window loader start */
-window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    setTimeout(() => {
-        loader.classList.add("hidden");
-    }, 500);
-});
-/* window loader end */
-
-/* header start */
-// Get the navbar toggler and the navbar collapse element
-const navbarToggler = document.querySelector('.navbar-toggler');
-const navbarCollapse = document.querySelector('.navbar-collapse');
-
-// Add an event listener to the navbar toggler to toggle the visibility of the navbar collapse element
-navbarToggler.addEventListener('click', function () {
-  navbarCollapse.classList.toggle('show');
-});
-
-// Add an event listener to the window to hide the navbar collapse element when the user clicks outside of it
-window.addEventListener('click', function (event) {
-  if (!event.target.matches('.navbar-toggler')) {
-    navbarCollapse.classList.remove('show');
-  }
-});
-/* header end */
-
 /* carousel start */
-let defaultTransform = 0;
-const slider = document.getElementById("slider");
-const slideWidth = 398; // Width of each slide
-const autoSlideInterval = 2000; // Interval in milliseconds for auto slide
-let autoSlideTimer; // Timer for auto slide
-
-function goNext() {
-    defaultTransform -= slideWidth;
-    if (Math.abs(defaultTransform) >= slider.scrollWidth - slider.clientWidth) {
-        defaultTransform = 0;
-    }
-    slider.style.transform = "translateX(" + defaultTransform + "px)";
-}
-
-function startAutoSlide() {
-    autoSlideTimer = setInterval(() => {
-        goNext();
-    }, autoSlideInterval);
-}
+(function ($) {
+    "use strict";
+    // Facts counter
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 2000
+    });
 
 
-function goNext() {
-    defaultTransform = defaultTransform - 398;
-    var slider = document.getElementById("slider");
-    if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
-    slider.style.transform = "translateX(" + defaultTransform + "px)";
-}
-next.addEventListener("click", goNext);
-function goPrev() {
-    var slider = document.getElementById("slider");
-    if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-    else defaultTransform = defaultTransform + 398;
-    slider.style.transform = "translateX(" + defaultTransform + "px)";
-}
-prev.addEventListener("click", goPrev);
-// Start auto slide on page load
-startAutoSlide();
-/* carousel end */
+    // Skills
+    $('.skill').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, { offset: '80%' });
+
+
+    // Project carousel
+    $(".project-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        nav: false,
+        dots: true,
+        dotsData: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
+
+
+    // Testimonials carousel
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        center: true,
+        dots: false,
+        nav: true,
+        navText: [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+
+
+})(jQuery);
 
