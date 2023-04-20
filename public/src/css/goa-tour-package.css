@@ -1,5 +1,6 @@
 /* google fonts start */
 @import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300&family=Poppins:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee:400,500,600,700');
 /* google fonts end */
 
 /* video bg start */
@@ -56,18 +57,7 @@ header .overlay {
 /* our usp para end */
 
 /* gallery start */
-.gallery {
-  width: fit-content;
-}
 
-.gallery-img {
-  border: 2px solid rgb(215, 215, 232);
-}
-
-.gallery-img:hover {
-  filter: brightness(80%);
-  transform: scale(1.1);
-}
 /* gallery end */
 
 /* parallax bg start */
@@ -81,3 +71,73 @@ header .overlay {
   z-index: -1;
 }
 /* parallax bg end */
+
+/* features start */
+.bg-light {
+  position: relative;
+  overflow: hidden;
+  background: #65c0ba !important;
+}
+
+.bg-light:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 400px;
+  width: 150%;
+  left: 50%;
+  background: #fff;
+  -webkit-transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+  -ms-transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+  transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+}
+
+.bg-light.no-slant:before {
+  display: none;
+}
+
+.bg-light-2 {
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.heading-serif, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
+  font-size: 70px;
+  font-family: "Abril Fatface", times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .heading-serif, .testimonial-section .heading, .slider-section .heading, .blog-post-entry .heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .lead {
+    font-size: 16px;
+  }
+}
+
+.ftco-img-flaticon {
+  text-align: center;
+}
+
+.ftco-img-flaticon img {
+  width: 70px;
+}
+
+.d-block {
+  font-size: 14px;
+  letter-spacing: .2em;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  text-transform: uppercase;
+  color: #65c0ba;
+  font-weight: bold;
+}
+/* features end */
+
+/* featured section start */
+
+/* featured section end */
