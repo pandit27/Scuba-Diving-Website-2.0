@@ -41,9 +41,166 @@
 </head>
 
 <body>
+    <!-- navbar start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0" style="color: #06a3da;">
+                    Scuba Diving
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                fdprocessedid="3pd3i">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="../../../index.html" class="nav-item nav-link active">HOME</a>
+                    <div class="nav-item dropdown">
+                        <a href="public/src/html/goa-tour-package.html" class="nav-link nav-item">GOA TOUR PACKAGE</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="public/src/html/about.html" class="dropdown-item">EXOTIC GOA TOUR PACKAGE 4N-5D</a>
+                            <a href="#" class="dropdown-item">GOA WEEKEND GATEWAY TOUR</a>
+                            <a href="#" class="dropdown-item">GOA TOUR 4D-3N PACKAGE</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="public/src/html/goa-adventure.html" class="nav-link nav-item">GOA ADVENTURE</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="public/src/html/about.html" class="dropdown-item">Scuba Diving</a>
+                            <a href="#" class="dropdown-item">Water Sports</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="public/src/html/about.html" class="nav-link nav-item">ABOUT US</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="public/src/html/about.html" class="dropdown-item">Blog Grid</a>
+                            <a href="#" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>
+                    <a href="public/src/html/contact.html" class="nav-item nav-link">CONTACT</a>
+                </div>
+                <a href="#" class="btn btn-primary py-2 px-4 ms-3">BOOK NOW</a>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- carousel start -->
+        <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">
+                        <img class="img-fluid" src="../../../img/goa1.webp" alt="Image">
+                    </button>
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+                        <img class="img-fluid" src="../../../img/goa2.webp" alt="Image">
+                    </button>
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+                        <img class="img-fluid" src="../../../img/goa3.webp" alt="Image">
+                    </button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="../../../img/goa1.webp" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase mb-4 animated zoomIn">Lorem, ipsum.</h4>
+                                <h1 class="display-1 text-white mb-0 animated zoomIn">Lorem ipsum dolor sit.</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="../../../img/goa2.webp" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase mb-4 animated zoomIn">Lorem, ipsum.</h4>
+                                <h1 class="display-1 text-white mb-0 animated zoomIn">Lorem ipsum dolor sit.</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="../../../img/goa3.webp" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase mb-4 animated zoomIn">Lorem, ipsum.</h4>
+                                <h1 class="display-1 text-white mb-0 animated zoomIn">Lorem ipsum dolor sit.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- carousel end -->
+
+        <!-- counter start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                            <h5 class="mb-3">Years Experience</h5>
+                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
+                            <h5 class="mb-3">Team Members</h5>
+                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                            <h5 class="mb-3">Satisfied Clients</h5>
+                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-check fa-4x text-primary mb-4"></i>
+                            <h5 class="mb-3">Projects Done</h5>
+                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- counter end -->
 
 
-    <script src="../js/goa-adventure.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../lib/wow/wow.min.js"></script>
+        <script src="../../../lib/easing/easing.min.js"></script>
+        <script src="../../../lib/waypoints/waypoints.min.js"></script>
+        <script src="../../../lib/counterup/counterup.min.js"></script>
+        <script src="../../../lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- javascript script src -->
+        <script src="../../../js/main.js"></script>
+        <script src="../../../js/dragging_carousel.js"></script>
+        <script src="../../../js/owl-carousel.js"></script>
+        <script src="../../../js/chatbot.js"></script>
+        <script src="../../../js/helper.js"></script>
+        <script src="../../../js/a.js"></script>
+        <script src="../../../js/about.js"></script>
+        <script src="../../../js/counter.js"></script>
+        <script src="../js/goa-tour-package.js"></script>
+        <script src="../js/goa-adventure.js"></script>
 </body>
 
 </html>
