@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="../css/goa-adventure-page.css">
     <!-- style sheets -->
     <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../css/goa-tour-package.css">
     <!-- style tag -->
     <style>
 
@@ -86,63 +87,24 @@
         </nav>
         <!-- navbar end -->
 
-        <!-- carousel start -->
-        <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1">
-                        <img class="img-fluid" src="../../../img/goa1.webp" alt="Image">
-                    </button>
-                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                        <img class="img-fluid" src="../../../img/goa2.webp" alt="Image">
-                    </button>
-                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
-                        <img class="img-fluid" src="../../../img/goa3.webp" alt="Image">
-                    </button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="w-100" src="../../../img/goa1.webp" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-white text-uppercase mb-4 animated zoomIn">Lorem, ipsum.</h4>
-                                <h1 class="display-1 text-white mb-0 animated zoomIn">Lorem ipsum dolor sit.</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100" src="../../../img/goa2.webp" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-white text-uppercase mb-4 animated zoomIn">Lorem, ipsum.</h4>
-                                <h1 class="display-1 text-white mb-0 animated zoomIn">Lorem ipsum dolor sit.</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100" src="../../../img/goa3.webp" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-white text-uppercase mb-4 animated zoomIn">Lorem, ipsum.</h4>
-                                <h1 class="display-1 text-white mb-0 animated zoomIn">Lorem ipsum dolor sit.</h1>
-                            </div>
-                        </div>
+        <!-- video bg start -->
+        <header class="w-100">
+            <video autoplay muted loop>
+                <source src="../../../video/My Video goa.mp4" type="video/mp4">
+            </video>
+
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 m-auto text-white d-flex flex-column gap-2">
+                        <h1 class="display-3 text-white" style="font-size: 80px;">GOA</h1>
+                        <p class="lead mb-0 text-white">Enjoy the beauty of Goa</p>
+                        <a href="#" class="btn btn-primary py-2 px-4"
+                            style="width: fit-content; margin: auto; margin-top: 2rem;">BOOK NOW</a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-        <!-- carousel end -->
+        </header>
+        <!-- video bg end -->
 
         <!-- about us start -->
         <div class="container-xxl py-5">
@@ -343,7 +305,7 @@
         <!-- best packages end -->
 
         <!-- gallery start -->
-        <div class="container-fluid py-5 bg-light">
+        <div class="container-fluid py-5" style="background: #b0d0db;">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h2 class="section-title text-primary">IMAGES</h2>
@@ -421,162 +383,169 @@
         </div>
         <!-- gallery end -->
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1"
-                            src="https://cdn.pixabay.com/photo/2017/01/03/09/18/woman-1948939__340.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Nikita Sharma</h5>
-                            <span>New Delhi</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos.
-                        Clita erat ipsum et lorem et sit.</p>
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                    <h1 class="display-6 mb-4">What Our Clients Say!</h1>
                 </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1"
-                            src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445__340.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Saurav Joshi</h5>
-                            <span>Kolkata, West Bengal</span>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="flex-shrink-0 rounded-circle border p-1"
+                                src="https://cdn.pixabay.com/photo/2017/01/03/09/18/woman-1948939__340.jpg" alt="">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Nikita Sharma</h5>
+                                <span>New Delhi</span>
+                            </div>
                         </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos.
+                            Clita erat ipsum et lorem et sit.</p>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1"
-                            src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445__340.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Mahesh Kumar</h5>
-                            <span>Luckhnow, Uttar Pradesh</span>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="flex-shrink-0 rounded-circle border p-1"
+                                src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445__340.jpg" alt="">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Saurav Joshi</h5>
+                                <span>Kolkata, West Bengal</span>
+                            </div>
                         </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos.
+                            Clita erat ipsum et lorem et sit.</p>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-light rounded p-4">
-                    <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1"
-                            src="https://cdn.pixabay.com/photo/2017/01/03/09/18/woman-1948939__340.jpg" alt="">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Archana Malik</h5>
-                            <span>Noida, Uttar Pradesh</span>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="flex-shrink-0 rounded-circle border p-1"
+                                src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445__340.jpg" alt="">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Mahesh Kumar</h5>
+                                <span>Luckhnow, Uttar Pradesh</span>
+                            </div>
                         </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos.
+                            Clita erat ipsum et lorem et sit.</p>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos.
-                        Clita erat ipsum et lorem et sit.</p>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="flex-shrink-0 rounded-circle border p-1"
+                                src="https://cdn.pixabay.com/photo/2017/01/03/09/18/woman-1948939__340.jpg" alt="">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Archana Malik</h5>
+                                <span>Noida, Uttar Pradesh</span>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos.
+                            Clita erat ipsum et lorem et sit.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+        <!-- Testimonial End -->
 
-    <!-- footer start -->
-    <div class="bg-dark py-3">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="widgets-section">
+        <!-- footer start -->
+        <div class="bg-dark py-3">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="widgets-section">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="bg-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="logo mb-4">
-                        <a href="#"><img src="images/scubalogo.webp" alt=""></a>
+        <footer class="bg-white py-5">
+            <div class="container">
+                <div class="row">
+
+                    <!--Column-->
+                    <div class="col-md-4">
+                        <div class="logo mb-4">
+                            <a href="#"><img src="images/scubalogo.webp" alt=""></a>
+                        </div>
+                        <div class="info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt me-3"></i>Scuba Adventure,
+                                    Calangute Circle, Goa 403516
+                                </li>
+                                <li><i class="fas fa-phone me-3"></i>Call us <a href="tel:9625358429">9625358429</a>
+                                </li>
+                                <li><i class="fas fa-envelope me-3"></i><a
+                                        href="mailto:info@scubadivingadventure.in">info@scubadivingadventure.in</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="info">
+
+                    <!--Column-->
+                    <div class="col-md-4">
+                        <h4 class="mb-4">Popular Goa Packages</h4>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-map-marker-alt me-3"></i>Scuba Adventure,
-                                Calangute Circle, Goa 403516
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Scuba Diving in Goa</a></li>
+                            <li><a href="#">Goa Watersports Activities</a></li>
+                            <li><a href="#">Goa Tour Packages</a></li>
+                            <li><a href="#">Goa Weekend Gateway</a></li>
+                            <li><a href="#">Goa Tour 4D-3N package</a></li>
+                            <li><a href="#">FAQ Goa</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Column-->
+                    <div class="col-md-4">
+                        <h4 class="mb-4">Goa Tour Packages</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Goa
+                                    Activities</a></li>
+                            <li><a href="#">Scubadiving in Goa</a>
                             </li>
-                            <li><i class="fas fa-phone me-3"></i>Call us <a href="tel:9625358429">9625358429</a>
-                            </li>
-                            <li><i class="fas fa-envelope me-3"></i><a
-                                    href="mailto:info@scubadivingadventure.in">info@scubadivingadventure.in</a>
+                            <li><a href="#">Goa Tour
+                                    Package</a></li>
+                            <li><a href="#">Neil Island
+                                    Tour</a></li>
+                            <li><a href="#">Havelock
+                                    Island Tour</a></li>
+                            <li><a href="#">Honeymoon Tour
+                                    Package</a></li>
+                            <li><a href="#">Explore the Goa</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h4 class="mb-4">Popular Goa Packages</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="../../../index.html">Home</a></li>
-                        <li><a href="../html/about.html">About Us</a></li>
-                        <li><a href="#">Scuba Diving in Goa</a></li>
-                        <li><a href="#">Goa Watersports Activities</a></li>
-                        <li><a href="../html/goa-tour-package.html">Goa Tour Packages</a></li>
-                        <li><a href="#">Goa Weekend Gateway</a></li>
-                        <li><a href="#">Goa Tour 4D-3N package</a></li>
-                        <li><a href="#">FAQ Goa</a></li>
-                        <li><a href="../html/contact.html">Contact</a></li>
-                    </ul>
-                <div class="col-md-4">
-                    <h4 class="mb-4">Goa Tour Packages</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Goa
-                                Activities</a></li>
-                        <li><a href="#">Scubadiving in Goa</a>
-                        </li>
-                        <li><a href="#">Goa Tour
-                                Package</a></li>
-                        <li><a href="#">Neil Island
-                                Tour</a></li>
-                        <li><a href="#">Havelock
-                                Island Tour</a></li>
-                        <li><a href="#">Honeymoon Tour
-                                Package</a></li>
-                        <li><a href="#">Explore the Goa</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </div>
-        <hr>
-        <div class="footer-bottom">
-            <p>Copyright © 2023 scubadivingcenter. All Rights Reserved.</p>
-            <p>Terms Of Use & Private Policy</p>
-        </div>
-    </footer>
-    <!-- footer end -->
+            <hr>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 scubadivingcenter. All Rights Reserved.</p>
+                <p>Terms Of Use & Private Policy</p>
+            </div>
+        </footer>
+        <!-- footer end -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../lib/wow/wow.min.js"></script>
-    <script src="../../../lib/easing/easing.min.js"></script>
-    <script src="../../../lib/waypoints/waypoints.min.js"></script>
-    <script src="../../../lib/counterup/counterup.min.js"></script>
-    <script src="../../../lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../lib/wow/wow.min.js"></script>
+        <script src="../../../lib/easing/easing.min.js"></script>
+        <script src="../../../lib/waypoints/waypoints.min.js"></script>
+        <script src="../../../lib/counterup/counterup.min.js"></script>
+        <script src="../../../lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- javascript script src -->
-    <script src="../../../js/main.js"></script>
-    <script src="../../../js/dragging_carousel.js"></script>
-    <script src="../../../js/owl-carousel.js"></script>
-    <script src="../../../js/chatbot.js"></script>
-    <script src="../../../js/helper.js"></script>
-    <script src="../../../js/a.js"></script>
-    <script src="../../../js/about.js"></script>
-    <script src="../../../js/counter.js"></script>
-    <script src="../js/goa-tour-package.js"></script>
-    <script src="../js/goa-adventure.js"></script>
+        <!-- javascript script src -->
+        <script src="../../../js/main.js"></script>
+        <script src="../../../js/dragging_carousel.js"></script>
+        <script src="../../../js/owl-carousel.js"></script>
+        <script src="../../../js/chatbot.js"></script>
+        <script src="../../../js/helper.js"></script>
+        <script src="../../../js/a.js"></script>
+        <script src="../../../js/about.js"></script>
+        <script src="../../../js/counter.js"></script>
+        <script src="../js/goa-tour-package.js"></script>
+        <script src="../js/goa-adventure.js"></script>
 </body>
 
 </html>
