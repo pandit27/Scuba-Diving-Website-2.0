@@ -192,7 +192,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: #06a3da;
+  background: hotpink;
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
 }
@@ -506,7 +506,7 @@
 
 /* Animation */
 .underline-animation:before {
-  animation: move-line 2s linear forwards;
+  animation: move-line infinite linear forwards;
 }
 
 @keyframes move-line {
@@ -520,7 +520,7 @@
   }
   100% {
     left: 100%;
-    width: 0;
+    width: 100%;
   }
 }
 
@@ -539,7 +539,7 @@
   }
   100% {
     right: 100%;
-    width: 0;
+    width: 100%;
   }
 }
 /* underline animation end */
