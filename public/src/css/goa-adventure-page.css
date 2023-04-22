@@ -146,3 +146,14 @@ body {
     margin-left: 25vw !important;
   }
 }
+
+.call-to-book {
+  background-color: #d5ae82;
+  color: white;
+}
+
+.call-to-book:hover {
+  border: 2px solid #d5ae82;
+  color: white !important;
+  background: black !important;
+}
