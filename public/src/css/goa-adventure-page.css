@@ -140,3 +140,9 @@ body {
   border-color: white;
   background: #009cff;
 }
+
+@media (max-width: 600px) {
+  .call-now-about {
+    margin-left: 25vw !important;
+  }
+}
