@@ -152,6 +152,8 @@ header .overlay {
 }
 /* features end */
 
-/* featured section start */
-
-/* featured section end */
+@media (max-width: 550px) {
+  .click-image {
+    height: auto;
+  }
+}
