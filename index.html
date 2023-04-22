@@ -1126,7 +1126,7 @@
         <!-- bestselling packages end -->
 
         <!-- video section start -->
-        <div class="container-xxl py-5 px-0 wow fadeInLeft" data-wow-delay="0.4s">
+        <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
             <div class="row g-0">
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5">
@@ -1143,17 +1143,16 @@
                             safe. Don't miss out on the opportunity to create unforgettable memories - book your scuba
                             diving experience with us today.</p>
                         <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Know More</a>
-                        <a href="#" class="btn btn-light py-md-3 px-md-5" onclick="callNumber('+918630905451')">Book
-                            Now</a>
+                        <a href="#" class="btn btn-light py-md-3 px-md-5">Book Now</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="video"
                         style="background-image: url('img/i2.webp') !important; background-size: cover !important; background-repeat: no-repeat !important;">
-                        <a href="https://www.youtube.com/watch?v=b5OTJA8QQF0" type="button" class="btn-play"
-                            data-bs-toggle="modal" data-bs-target="#videoModal">
-                            <span><i class="fas fa-9x fa-play"></i></span>
-                        </a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="video/scuba diving 5.mp4" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1167,6 +1166,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
                         <div class="ratio ratio-16x9">
                             <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
                                 allowscriptaccess="always" allow="autoplay"></iframe>
