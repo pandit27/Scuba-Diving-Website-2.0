@@ -171,6 +171,7 @@ ratings i {
 
 .product-image {
   width: 100%;
+  height: max-content;
 }
 
 .spec-1 {
