@@ -268,7 +268,7 @@ h6,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--primary);
+  background: #06a3da;
   border-radius: 2px;
   transform: rotate(-45deg);
 }
@@ -722,19 +722,20 @@ video {
 }
 
 .service-item {
-  height: 320px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background: #ffffff;
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
-  transition: 0.5s;
+  height: 320px !important;
+  padding: 30px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08) !important;
+  transition: 0.5s !important;
 }
 
 .service-item:hover {
-  background: var(--primary);
+  background: #06a3da;
+  color: white !important;
 }
 
 .section-i:hover {
