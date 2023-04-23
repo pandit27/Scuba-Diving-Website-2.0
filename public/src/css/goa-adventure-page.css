@@ -4,10 +4,11 @@ html {
 }
 
 body {
-  overflow-x: hidden !important;
-  display: flex;
+  /* overflow-x: hidden !important; */
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  /* width: 100vw; */
 }
 /* necessary css to make page more responsive end */
 
@@ -172,17 +173,6 @@ ratings i {
   width: 100%;
 }
 
-.dot {
-  height: 7px;
-  width: 7px;
-  margin-left: 6px;
-  margin-right: 6px;
-  margin-top: 3px;
-  background-color: blue;
-  border-radius: 50%;
-  display: inline-block;
-}
-
 .spec-1 {
   color: #938787;
   font-size: 15px;
@@ -191,3 +181,60 @@ ratings i {
 .para {
   font-size: 16px;
 }
+
+.ribbon-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.ribbon {
+  position: relative;
+  display: inline-block;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.ribbon:before {
+  border-top: 3px solid #dc3545;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+.ribbon:after {
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-left: 3px solid #dc3545;
+  top: 100%;
+  right: 0;
+}
+
+@media (max-width: 991.98px) {
+  .ribbon-wrapper {
+    display: none;
+  }
+}
+
+/* 
+  <div class="ribbon-wrapper">
+    <div class="ribbon bg-danger">30% off</div>
+  </div> 
+*/
