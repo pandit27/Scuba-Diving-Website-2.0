@@ -31,11 +31,11 @@
 
 @media (max-width: 576px) {
   #header-carousel {
-    height: 80vh;
+    height: 70vh;
   }
 
   #header-carousel img{
-    height: 80vh !important;
+    height: 70vh !important;
   }
 
   .about-section {
