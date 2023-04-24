@@ -17,6 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
     <!-- style css -->
     <link rel="stylesheet" href="../css/about-page.css">
+    <link rel="stylesheet" href="../../../css/whatsapp.css">
 
     <!-- style tag -->
     <style>
@@ -79,8 +80,8 @@
     <!-- header end -->
 
     <!-- first section start -->
-    <section
-        class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('../../../img/about-cover.webp') !important; background-repeat: no-repeat; background-size: cover;">
+    <section class="relative bg-cover bg-center bg-no-repeat"
+        style="background-image: url('../../../img/about-cover.webp') !important; background-repeat: no-repeat; background-size: cover;">
         <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25">
         </div>
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -112,6 +113,15 @@
         </div>
     </section>
     <!-- first section end -->
+
+    <!-- whatsapp popup start -->
+    <div class="whatsapp-popup">
+        <a href="https://api.whatsapp.com/send?phone=918630905451&text=Hello,%20I%20came%20across%20your%20website%20https://scubadivingcenter.netlify.app/%20Tell%20me%20about%20more%20about%20the%20package%20details%20and%20further%20process"
+            target="_blank">
+            <img src="img/whatsapp-logo.webp" alt="whatsapp icon" loading="lazy" class="w-100 img-fluid" />
+        </a>
+    </div>
+    <!-- whatsapp popup end -->
 
     <!-- about us start -->
     <section class="bg-white dark:bg-gray-900">
@@ -269,8 +279,8 @@
                         <div
                             class="lg:m-4 shadow-md hover:shadow-lg hover:scale-110 hover:bg-blue-200 hover:text-black cursor-default rounded-lg bg-white my-12 mx-8">
                             <!-- Card Image -->
-                            <img src="../../../img/dive-the-ocean2.webp"
-                                alt="" class="overflow-hidden" style="height: auto; width: auto;">
+                            <img src="../../../img/dive-the-ocean2.webp" alt="" class="overflow-hidden"
+                                style="height: auto; width: auto;">
                             <!-- Card Content -->
                             <div class="p-4">
                                 <h3 class="font-medium text-gray-600 text-lg my-2 uppercase">Dive the Ocean</h3>
@@ -556,7 +566,8 @@
 
                     <div class="flex flex-col items-start mt-5 space-y-2">
                         <a href="#"
-                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">+91 8630905451</a>
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">+91
+                            8630905451</a>
                         <a href="#"
                             class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">info@scubadivingcenter.in</a>
                     </div>
@@ -579,6 +590,7 @@
 
     <!-- about navbar js -->
     <script src="../js/about.js"></script>
+    <script src="../../../js/whatsapp.js"></script>
 </body>
 
 </html>

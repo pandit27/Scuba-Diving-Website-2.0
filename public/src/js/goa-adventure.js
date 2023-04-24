@@ -71,3 +71,4 @@
 
 })(jQuery);
 
+$('.dropdown-toggle').dropdown();
