@@ -192,7 +192,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: rgb(216, 202, 6);
+  background: yellow;
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
 }
@@ -226,7 +226,7 @@
   z-index: 3;
   width: 0;
   height: 0;
-  border-left: 32px solid rgb(216, 202, 6);
+  border-left: 32px solid yellow;
   border-top: 22px solid transparent;
   border-bottom: 22px solid transparent;
 }
