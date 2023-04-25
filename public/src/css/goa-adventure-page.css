@@ -241,3 +241,18 @@ ratings i {
     left: 1vw;
   }
 }
+
+.mt-1.mb-1.spec-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.mt-1.mb-1.spec-1 span {
+  display: flex;
+  align-items: center;
+}
+
+.mt-1.mb-1.spec-1 span i {
+  margin-right: 0.2rem;
+}
