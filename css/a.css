@@ -1,13 +1,13 @@
 .t-img {
   display: block;
-  height: 400px;
+  height: 40vh;
   margin-right: 10px;
-  width: 50vw;
+  width: 40vw;
 }
 
 @media (max-width: 576px) {
   .t-img {
-    height: 200px;
+    height: 26vh;
     width: 100vw;
     margin-right: 4px;
   }
