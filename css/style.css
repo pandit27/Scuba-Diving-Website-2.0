@@ -761,3 +761,8 @@ video {
   color: #ffffff;
 }
 /* service end */
+
+.watch-tutorial-btn:hover {
+  color: white;
+  background: #196c8d !important;
+}
