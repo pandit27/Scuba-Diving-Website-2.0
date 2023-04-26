@@ -20,6 +20,19 @@
     <link rel="stylesheet" href="../css/about-page.css">
     <link rel="stylesheet" href="../../../css/whatsapp.css">
 
+    <!-- base href -->
+    <base href="/">
+    <script>
+        // Replace the current URL with the desired URL
+        history.replaceState(null, null, '/about-us');
+      
+        // Handle browser back/forward button clicks
+        window.addEventListener('popstate', function() {
+          // Restore the original URL
+          history.replaceState(null, null, '/about-us');
+        });
+      </script>
+
     <!-- style tag -->
     <style>
         body {

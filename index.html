@@ -72,6 +72,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- base href -->
+    <base href="/">
+    <script>
+        // Replace the current URL with the desired URL
+        history.replaceState(null, null, '/');
+      
+        // Handle browser back/forward button clicks
+        window.addEventListener('popstate', function() {
+          // Restore the original URL
+          history.replaceState(null, null, '/');
+        });
+      </script>
 </head>
 
 <body class="overflow-auto bg-cover bg-fixed shadow-lg"
@@ -1334,7 +1347,7 @@
         <footer class="bg-light py-5">
             <div class="container">
                 <div class="row" style="display: flex; justify-content: center; align-items: center;">
-                    <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="col-md-4 scuba-div" style="display: flex; justify-content: center; align-items: center;">
                         <div class="logo mb-4 bg-white">
                             <a href="#"><img src="favicon.png" alt="scuba logo" loading="lazy"
                                     class="img-fluid bg-white scuba-logo" style="width: fit-content; height: 30vh;"></a>

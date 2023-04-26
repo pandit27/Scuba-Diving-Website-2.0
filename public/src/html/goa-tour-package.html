@@ -43,6 +43,19 @@
     <link rel="stylesheet" href="../css/goa-tour-package.css">
     <link rel="stylesheet" href="../../../css/whatsapp.css">
     <link rel="stylesheet" href="../../../css/scuba-logo.css">
+
+    <!-- base href -->
+    <base href="/">
+    <script>
+        // Replace the current URL with the desired URL
+        history.replaceState(null, null, '/goa-tour-package');
+      
+        // Handle browser back/forward button clicks
+        window.addEventListener('popstate', function() {
+          // Restore the original URL
+          history.replaceState(null, null, '/goa-tour-package');
+        });
+      </script>
 </head>
 
 <body style="background: white !important; overflow-x: hidden; scroll-behavior: smooth;">
@@ -78,7 +91,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-link nav-item">ABOUT US</a>
+                        <a href="/about-us" class="nav-link nav-item">ABOUT US</a>
                         <div class="dropdown-menu m-0">
                             <a href="public/src/html/about.html" class="dropdown-item">Blog Grid</a>
                             <a href="#" class="dropdown-item">Blog Detail</a>
@@ -1011,7 +1024,6 @@
                         </div>
                         <!-- END slider -->
                     </div>
-
                 </div>
             </div>
         </section>
@@ -1023,8 +1035,7 @@
                 <div class="row justify-content-center text-center mb-5">
                     <div class="col-md-8 ">
                         <h2 class="heading text-white" data-aos="fade-up">Top Destination</h2>
-                        <p class="lead" data-aos="fade-up">These are some of the best destinations in Goa. To know more
-                            about these places call us on +91 </p>
+                        <p class="lead" data-aos="fade-up">These are some of the best destinations in Goa. To know more about these places call us on +91 8630905451</p>
                     </div>
                 </div>
                 <div class="row">
@@ -1108,7 +1119,7 @@
                 </div>
             </div>
             <hr>
-            <div class="footer-bottom">
+            <div class="footer-bottom d-flex justify-content-sm-around align-items-center">
                 <p>Copyright © 2023 scubadivingcenter. All Rights Reserved.</p>
                 <p>Terms Of Use & Private Policy</p>
             </div>

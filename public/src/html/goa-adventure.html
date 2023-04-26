@@ -47,6 +47,19 @@
     <link rel="stylesheet" href="../css/goa-tour-package.css">
     <link rel="stylesheet" href="../../../css/whatsapp.css">
     <link rel="stylesheet" href="../../../css/scuba-logo.css">
+
+    <!-- base href -->
+    <base href="/">
+    <script>
+        // Replace the current URL with the desired URL
+        history.replaceState(null, null, '/goa-adventure');
+      
+        // Handle browser back/forward button clicks
+        window.addEventListener('popstate', function() {
+          // Restore the original URL
+          history.replaceState(null, null, '/goa-adventure');
+        });
+      </script>
 </head>
 
 <body>
@@ -1865,10 +1878,10 @@
             </div>
         </div>
         <hr>
-        <div class="footer-bottom">
-            <p>Copyright © 2023 scubadivingcenter. All Rights Reserved.</p>
-            <p>Terms Of Use & Private Policy</p>
-        </div>
+        <div class="footer-bottom d-flex justify-content-sm-around align-items-center">
+                <p>Copyright © 2023 scubadivingcenter. All Rights Reserved.</p>
+                <p>Terms Of Use & Private Policy</p>
+            </div>
     </footer>
     <!-- footer end -->
 
