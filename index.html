@@ -78,13 +78,21 @@
     <script>
         // Replace the current URL with the desired URL
         history.replaceState(null, null, '/');
-      
+
         // Handle browser back/forward button clicks
-        window.addEventListener('popstate', function() {
-          // Restore the original URL
-          history.replaceState(null, null, '/');
+        window.addEventListener('popstate', function () {
+            event.preventDefault();
+
+            // Get the target URL from the link's "href" attribute
+            const url = event.target.getAttribute('href');
+
+            // Map /home to /index.html
+            const targetUrl = (url === '/') ? '/index.html' : url;
+
+            // Update the URL using History.js
+            history.pushState(null, null, targetUrl);
         });
-      </script>
+    </script>
 </head>
 
 <body class="overflow-auto bg-cover bg-fixed shadow-lg"
@@ -141,28 +149,28 @@
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">HOME</a>
                     <div class="nav-item dropdown">
-                        <a href="public/src/html/goa-tour-package.html" class="nav-link nav-item">GOA TOUR PACKAGE</a>
+                        <a href="goa-tour-package.html" class="nav-link nav-item">GOA TOUR PACKAGE</a>
                         <div class="dropdown-menu m-0">
-                            <a href="public/src/html/about.html" class="dropdown-item">EXOTIC GOA TOUR PACKAGE 4N-5D</a>
+                            <a href="about.html" class="dropdown-item">EXOTIC GOA TOUR PACKAGE 4N-5D</a>
                             <a href="#" class="dropdown-item">GOA WEEKEND GATEWAY TOUR</a>
                             <a href="#" class="dropdown-item">GOA TOUR 4D-3N PACKAGE</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="public/src/html/goa-adventure.html" class="nav-link nav-item">GOA ADVENTURE</a>
+                        <a href="goa-adventure.html" class="nav-link nav-item">GOA ADVENTURE</a>
                         <div class="dropdown-menu m-0">
-                            <a href="public/src/html/about.html" class="dropdown-item">Scuba Diving</a>
+                            <a href="about.html" class="dropdown-item">Scuba Diving</a>
                             <a href="#" class="dropdown-item">Water Sports</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="public/src/html/about.html" class="nav-link nav-item">ABOUT US</a>
+                        <a href="about.html" class="nav-link nav-item">ABOUT US</a>
                         <div class="dropdown-menu m-0">
-                            <a href="public/src/html/about.html" class="dropdown-item">Blog Grid</a>
+                            <a href="about.html" class="dropdown-item">Blog Grid</a>
                             <a href="#" class="dropdown-item">Blog Detail</a>
                         </div>
                     </div>
-                    <a href="public/src/html/contact.html" class="nav-item nav-link">CONTACT</a>
+                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
                 </div>
                 <a href="#" class="btn btn-primary py-2 px-4 ms-3" onclick="callNumber('+918630905451')">BOOK NOW</a>
             </div>
@@ -1347,7 +1355,8 @@
         <footer class="bg-light py-5">
             <div class="container">
                 <div class="row" style="display: flex; justify-content: center; align-items: center;">
-                    <div class="col-md-4 scuba-div" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="col-md-4 scuba-div"
+                        style="display: flex; justify-content: center; align-items: center;">
                         <div class="logo mb-4 bg-white">
                             <a href="#"><img src="favicon.png" alt="scuba logo" loading="lazy"
                                     class="img-fluid bg-white scuba-logo" style="width: fit-content; height: 30vh;"></a>
