@@ -4,11 +4,13 @@ html {
 }
 
 body {
-  /* overflow-x: hidden !important; */
-  /* display: flex;
+  overflow-x: hidden !important;
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap; */
-  /* width: 100vw; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 /* necessary css to make page more responsive end */
 
