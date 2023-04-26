@@ -4,12 +4,12 @@ html {
 }
 
 body {
-  overflow-x: hidden !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  /* overflow-x: hidden !important; */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  /* flex-wrap: wrap !important; */
   width: 100vw;
 }
 /* necessary css to make page more responsive end */
