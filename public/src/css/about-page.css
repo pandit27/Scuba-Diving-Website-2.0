@@ -1,8 +1,3 @@
-/* tailwind components */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* necessary css to make page more responsive start */
 html {
   scroll-behavior: smooth;
@@ -10,9 +5,12 @@ html {
 
 body {
   overflow-x: hidden !important;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* display: flex; */
+  /* flex-direction: column;
+  flex-wrap: wrap; */
 }
 /* necessary css to make page more responsive end */
 
