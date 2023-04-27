@@ -766,3 +766,19 @@ video {
   color: white;
   background: #196c8d !important;
 }
+
+/* accordian start */
+@media (max-width: 600px) {
+  .accordion {
+    width: 100vw !important;
+  }
+  .my-accordion {
+    width: 100vw !important;
+    margin: 0 0 !important;
+  }
+
+  .accordion-item {
+    width: 100vw !important;
+  }
+}
+/* accordian end */
