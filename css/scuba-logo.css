@@ -9,6 +9,6 @@
   }
 
   .phone-logo {
-    border: none;
+    border: none !important;
   }
 }
