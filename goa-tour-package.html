@@ -52,13 +52,13 @@
     <!-- navbar start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-lg-0" style="padding-right: 5rem !important;">
-            <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
-                style="height: 12vh; background: white; margin-right: 1rem;">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0" style="color: #06a3da; z-index: 2;">
-                    Scuba Diving
-                </h1>
-            </a>
+                <a href="index.html" class="navbar-brand p-0">
+                    <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
+                        style="height: 12vh; background: white; margin-right: 1rem;">
+                    <h1 class="m-0" style="color: #06a3da; z-index: 2;">
+                        Scuba Diving
+                    </h1>
+                </a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 fdprocessedid="3pd3i" aria-label="hamburger" title="hamburger">
                 <span class="fa fa-bars"></span>
@@ -132,8 +132,7 @@
                 <div class="w-100 m-auto text-white d-flex flex-column gap-2">
                     <h1 class="display-3 text-white" style="font-size: 80px;">GOA</h1>
                     <p class="lead mb-0 text-white">Enjoy the beauty of Goa</p>
-                    <a class="btn btn-primary py-2 px-4"
-                        style="width: fit-content; margin: auto; margin-top: 2rem;"
+                    <a class="btn btn-primary py-2 px-4" style="width: fit-content; margin: auto; margin-top: 2rem;"
                         href="tel:+918630905451
                 ">BOOK NOW</a>
                 </div>
@@ -546,8 +545,9 @@
                                 <a class="btn btn-sm btn-primary rounded text-white py-2 px-4"
                                     href="https://api.whatsapp.com/send?phone=918630905451&text=Hello,its%20great%20to%20know%20about%20scubadivingcenter.in%20Help%20me%20with%20the%20package%20details%20and%20further%20process.">Know
                                     More</a>
-                                <a class="btn btn-sm btn-dark rounded py-2 px-4"
-                                    style="color: white !important; background: #d5ae82; border: none;">Book Now</a>
+                                <button class="btn btn-sm btn-dark rounded py-2 px-4"
+                                    style="color: white !important; background: #d5ae82; border: none;"
+                                    onclick="callNumber('+91 8630905451'); return false">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -768,7 +768,7 @@
                                     More</a>
                                 <a class="btn btn-sm btn-dark rounded py-2 px-4"
                                     style="color: white !important; background: #d5ae82; border: none;"
-                                    ohref="tel:+918630905451">Book Now</a>
+                                    href="tel:+918630905451">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -1160,6 +1160,11 @@
     <script src="js/counter.js"></script>
     <script src="public/src/js/goa-tour-package.js"></script>
     <script src="js/whatsapp.js"></script>
+    <script>
+        function callNumber(number) {
+            window.location.href = 'tel:' + number;
+        }
+    </script>
 </body>
 
 </html>

@@ -138,13 +138,13 @@
     <!-- navbar start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-lg-0" style="padding-right: 5rem !important;">
-            <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
-                style="height: 12vh; background: white; margin-right: 1rem;">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0" style="color: #06a3da; z-index: 2;">
-                    Scuba Diving
-                </h1>
-            </a>
+                <a href="index.html" class="navbar-brand p-0">
+                    <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
+                        style="height: 12vh; background: white; margin-right: 1rem;">
+                    <h1 class="m-0" style="color: #06a3da; z-index: 2;">
+                        Scuba Diving
+                    </h1>
+                </a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 fdprocessedid="3pd3i" aria-label="hamburger" title="hamburger">
                 <span class="fa fa-bars"></span>
@@ -1372,7 +1372,8 @@
                     Get all your answers on your whatsapp number. you can book through whatsapp.
                 </p>
             </div>
-            <a href="#" class="btn btn-primary text-center book-now-1" style="margin: auto auto;" onclick="callNumber('+918630905451')">BOOK NOW</a>
+            <a href="#" class="btn btn-primary text-center book-now-1" style="margin: auto auto;"
+                onclick="callNumber('+918630905451')">BOOK NOW</a>
         </div>
     </div>
     <!-- accordian end -->
@@ -1501,6 +1502,11 @@
     <script src="js/whatsapp-home.js"></script>
     <script src="js/callNumber.js"></script>
     <script src="public/src/js/goa-adventure.js"></script>
+    <script>
+        function callNumber(number) {
+            window.location.href = 'tel:' + number;
+        }
+    </script>
 </body>
 
 </html>
