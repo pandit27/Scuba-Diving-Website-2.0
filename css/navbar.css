@@ -154,5 +154,17 @@
       top: 0;
       right: 6vw;
     }
+
+    .off-canvas {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 20vw;
+      height: 10.8vh;
+      z-index: 10;
+      display: block !important;
+      background-color: #ffffff;
+      color: black;
+    }
   }
   
