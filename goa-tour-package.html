@@ -52,13 +52,13 @@
     <!-- navbar start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-lg-0" style="padding-right: 5rem !important;">
-                <a href="index.html" class="navbar-brand p-0">
-                    <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
-                        style="height: 12vh; background: white; margin-right: 1rem;">
-                    <h1 class="m-0" style="color: #06a3da; z-index: 2;">
-                        Scuba Diving
-                    </h1>
-                </a>
+            <a href="index.html" class="navbar-brand p-0">
+                <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
+                    style="height: 12vh; background: white; margin-right: 1rem;">
+                <h1 class="m-0" style="color: #06a3da; z-index: 2;">
+                    <!-- Scuba Diving -->
+                </h1>
+            </a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 fdprocessedid="3pd3i" aria-label="hamburger" title="hamburger">
                 <span class="fa fa-bars"></span>
@@ -77,23 +77,22 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">CONTACT</a>
                 </div>
-                <a class="btn btn-primary py-2 px-4 ms-3" href="tel:+918630905451
-                ">BOOK NOW</a>
+                <a href="#" class="btn btn-primary py-2 px-4 ms-3" onclick="callNumber('+918630905451')">BOOK NOW</a>
             </div>
 
             <button class="off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight" style="display: none; border: none;">
+                aria-controls="offcanvasRight" style="display: none; border: none; top: -6px;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
                     alt="" style="width: 4vw !important; opacity: 0.8;">
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
-                style="max-width: 60vw !important;">
+                style="max-width: fit-content !important;">
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                    aria-label="Close" style="position: absolute; right: 0;"></button>
                 <div class="offcanvas-header py-4" style="padding-bottom: 0;">
                     <div style="display: flex; flex-direction: column;">
                         <h5 id="offcanvasRightLabel" style="color: #06A3DA;">Scuba Diving Center</h5>
-                        <img src="favicon.png" alt="" style="height: 20vh;">
+                        <img src="favicon.png" alt="" style="width: 10vh; margin: auto auto;">
                     </div>
                 </div>
                 <div class="offcanvas-body" style="padding-left: 0; padding-top: 0;">
@@ -103,17 +102,16 @@
                         <hr>
                         <li style="margin-bottom: 1rem;"><a href="goa-tour-package.html"
                                 style="color: black !important;">GOA TOUR PACKAGE</a></li>
-                        <hr>
+                                <hr>
                         <li style="margin-bottom: 1rem;"><a href="goa-adventure.html"
                                 style="color: black !important;">GOA ADVENTURE</a></li>
-                        <hr>
+                                <hr>
                         <li style="margin-bottom: 1rem;"><a href="about.html" style="color: black !important;">ABOUT
                                 US</a></li>
-                        <hr>
+                                <hr>
                         <li style="margin-bottom: 1rem;"><a href="contact.html" style="color: black !important;">CONTACT
                                 US</a></li>
-                        <li><a class="btn btn-primary" href="tel:+918630905451
-                            ">BOOK NOW</a></li>
+                        <li><a class="btn btn-primary" href="#">BOOK NOW</a></li>
                     </ul>
                 </div>
             </div>
