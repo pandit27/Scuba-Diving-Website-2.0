@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Scuba Diving Center</title>
+    <title>About Us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="scubadivingcenter" name="scuba, diving, center">
     <meta content="scubadivingcenter" name="This is a scuba diving services website">
@@ -73,27 +73,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- <script src="js/scroll-logo.js"></script> -->
-
-    <!-- base href -->
-    <base href="/">
-    <script>
-        // Replace the current URL with the desired URL
-        history.replaceState(null, null, '/');
-
-        // Handle browser back/forward button clicks
-        window.addEventListener('popstate', function () {
-            event.preventDefault();
-
-            // Get the target URL from the link's "href" attribute
-            const url = event.target.getAttribute('href');
-
-            // Map /home to /index.html
-            const targetUrl = (url === '/') ? '/index.html' : url;
-
-            // Update the URL using History.js
-            history.pushState(null, null, targetUrl);
-        });
-    </script>
 </head>
 
 <body class="overflow-auto bg-cover bg-fixed shadow-lg"

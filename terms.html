@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Scuba Diving Center</title>
+    <title>Terms & Conditions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="scubadivingcenter" name="scuba, diving, center">
     <meta content="scubadivingcenter" name="This is a scuba diving services website">
@@ -11,7 +11,7 @@
     <meta name="description" content="This is a scuba diving website which provides different packages to customers">
 
     <!-- Favicon -->
-    <link href="/favicon2.ico" rel="icon">
+    <link href="favicon2.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,7 +75,9 @@
     <!-- <script src="js/scroll-logo.js"></script> -->
 </head>
 
-<body style="overflow-x: hidden; width: 100vw !important;">
+<body class="overflow-auto bg-cover bg-fixed shadow-lg"
+    style="background-image:url('#'); background-position: center -80px; scroll-behavior: smooth; overflow-x: hidden !important;">
+
     <!-- whatsapp popup start -->
     <div class="whatsapp-popup">
         <a href="https://api.whatsapp.com/send?phone=918630905451&text=Hello,its%20great%20to%20know%20about%20scubadivingcenter.in%20Help%20me%20with%20the%20package%20details%20and%20further%20process."
@@ -88,12 +90,12 @@
     <!-- navbar start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-lg-0" style="padding-right: 5rem !important;">
+            <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
+                style="height: 12vh; background: white; margin-right: 1rem;">
             <a href="index.html" class="navbar-brand p-0">
-                <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
-                    style="height: 12vh; background: white; margin-right: 1rem;">
-                <h1 class="m-0" style="color: #06a3da; z-index: 2;">
-                    <!-- Scuba Diving -->
-                </h1>
+                <!-- <h1 class="m-0" style="color: #06a3da; z-index: 2;">
+                    Scuba Diving
+                </h1> -->
             </a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 fdprocessedid="3pd3i" aria-label="hamburger" title="hamburger">
@@ -113,22 +115,23 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">CONTACT</a>
                 </div>
-                <a href="#" class="btn btn-primary py-2 px-4 ms-3" onclick="callNumber('+918630905451')">BOOK NOW</a>
+                <a href="#" class="btn btn-primary py-2 px-4 ms-3"
+                    onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
             </div>
 
             <button class="off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight" style="display: none; border: none; top: -6px;">
+                aria-controls="offcanvasRight" style="display: none; border: none;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
                     alt="" style="width: 4vw !important; opacity: 0.8;">
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
-                style="max-width: fit-content !important;">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
-                    style="position: absolute; right: 0;"></button>
+                style="max-width: 60vw !important;">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
                 <div class="offcanvas-header py-4" style="padding-bottom: 0;">
                     <div style="display: flex; flex-direction: column;">
                         <h5 id="offcanvasRightLabel" style="color: #06A3DA;">Scuba Diving Center</h5>
-                        <img src="favicon.png" alt="" style="width: 10vh; margin: auto auto;">
+                        <img src="favicon.png" alt="" style="height: 20vh;">
                     </div>
                 </div>
                 <div class="offcanvas-body" style="padding-left: 0; padding-top: 0;">
@@ -147,7 +150,8 @@
                         <hr>
                         <li style="margin-bottom: 1rem;"><a href="contact.html" style="color: black !important;">CONTACT
                                 US</a></li>
-                        <li><a class="btn btn-primary" href="#">BOOK NOW</a></li>
+                        <li><a class="btn btn-primary" onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -161,14 +165,6 @@
         <h1>Terms & Conditions</h1>
     </div>
     <!-- bg image end -->
-
-    <style>
-        @media (max-width: 600px) {
-            .bg-image {
-                height: 40vh !important;
-            }
-        }
-    </style>
 
     <!-- terms start -->
     <div style="padding:50px" style="overflow-x: hidden;">
@@ -533,12 +529,21 @@
     <!-- terms end -->
 
     <!-- footer start -->
-    <footer class="py-5" style="background-color: #eef9ff; width: 100vw !important;">
+    <div class="bg-dark py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="widgets-section">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light py-5">
         <div class="container">
             <div class="row" style="display: flex; justify-content: center; align-items: center;">
-                <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+                <div class="col-md-4 scuba-div" style="display: flex; justify-content: center; align-items: center;">
                     <div class="logo mb-4 bg-white">
-                        <a href="#"><img src="favicon.png" alt="scuba logo" loading="lazy" class="img-fluid bg-white"
+                        <a href="#"><img src="favicon.png" alt="scuba logo" loading="lazy"
+                                class="img-fluid bg-white scuba-logo"
                                 style="width: fit-content; height: 30vh; border-bottom: 2px solid #d5ae82; border-left: 2px solid #d5ae82;"></a>
                     </div>
                 </div>
@@ -561,21 +566,21 @@
                 <div class="col-md-4">
                     <h4 class="mb-4">Popular Goa Packages</h4>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="goa-tour-package.html">Scuba Diving in Goa</a></li>
-                        <li><a href="goa-adventure.html">Goa Watersports Activities</a></li>
-                        <li><a href="goa-tour-package.html">Goa Tour Packages</a></li>
-                        <li><a href="goa-adventure.html">Goa Weekend Gateway</a></li>
-                        <li><a href="goa-adventure.html">Goa Tour 4D-3N package</a></li>
-                        <li><a href="contact.html">FAQ Goa</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Scuba Diving in Goa</a></li>
+                        <li><a href="#">Goa Watersports Activities</a></li>
+                        <li><a href="#">Goa Tour Packages</a></li>
+                        <li><a href="#">Goa Weekend Gateway</a></li>
+                        <li><a href="#">Goa Tour 4D-3N package</a></li>
+                        <li><a href="#">FAQ Goa</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <hr>
-        <div class="footer-bottom" style="margin-left: 2rem;">
+        <div class="footer-bottom">
             <p>Copyright © 2023 scubadivingcenter. All Rights Reserved.</p>
             <p><a href="terms.html">Terms of Use</a> & <a href="policy.html">Private Policy</a></p>
         </div>
@@ -597,10 +602,9 @@
     <script src="js/a.js"></script>
     <script src="js/about.js"></script>
     <script src="js/counter.js"></script>
-    <script src="js/whatsapp.js"></script>
+    <script src="js/whatsapp-home.js"></script>
     <script src="js/callNumber.js"></script>
     <script src="public/src/js/goa-adventure.js"></script>
-    </script>
 </body>
 
 </html>
