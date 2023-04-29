@@ -115,75 +115,44 @@
     <!-- whatsapp popup end -->
 
     <!-- navbar start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-lg-0" style="padding-right: 5rem !important;">
-            <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
-                style="height: 12vh; background: white; margin-right: 1rem;">
-            <a href="index.html" class="navbar-brand p-0">
-                <!-- <h1 class="m-0" style="color: #06a3da; z-index: 2;">
-                    Scuba Diving
-                </h1> -->
-            </a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                fdprocessedid="3pd3i" aria-label="hamburger" title="hamburger">
-                <span class="fa fa-bars"></span>
-            </button> -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">HOME</a>
-                    <div class="nav-item dropdown">
-                        <a href="goa-tour-package.html" class="nav-link nav-item">GOA TOUR PACKAGE</a>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="goa-adventure.html" class="nav-link nav-item">GOA ADVENTURE</a>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-link nav-item">ABOUT US</a>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
-                </div>
-                <a href="#" class="btn btn-primary py-2 px-4 ms-3"
-                    onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
-            </div>
-
-            <button class="off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight" style="display: none; border: none;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
-                    alt="" style="width: 4vw !important; opacity: 0.8;">
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
-                style="max-width: 60vw !important;">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-                <div class="offcanvas-header py-4" style="padding-bottom: 0;">
-                    <div style="display: flex; flex-direction: column;">
-                        <h5 id="offcanvasRightLabel" style="color: #06A3DA;">Scuba Diving Center</h5>
-                        <img src="favicon.png" alt="" style="height: 20vh;">
-                    </div>
-                </div>
-                <div class="offcanvas-body" style="padding-left: 0; padding-top: 0;">
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 1rem;"><a href="index.html" style="color: black !important;">HOME</a>
-                        </li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="goa-tour-package.html"
-                                style="color: black !important;">GOA TOUR PACKAGE</a></li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="goa-adventure.html"
-                                style="color: black !important;">GOA ADVENTURE</a></li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="about.html" style="color: black !important;">ABOUT
-                                US</a></li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="contact.html" style="color: black !important;">CONTACT
-                                US</a></li>
-                        <li><a class="btn btn-primary" onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand" href="#"><img src="favicon.png" class="img-fluid logo-left" style="width: 4vw;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" style="gap: 2rem;">
+                <li class="nav-item active nav-logo" style="display: none;">
+                    <img class="img-fluid" src="favicon.png" alt="logo">
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="goa-tour-package.html">GOA TOUR PACKAGE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="goa-adventure.html">GOA ADVENTURE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary btn-book-now" href="#"
+                        onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="close navbar-toggler close-btn" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- navbar end -->
 
     <!-- first section start -->
@@ -256,7 +225,7 @@
     <div class="container-fluid px-5" style="overflow-x: hidden !important; width: 100vw;">
         <div class="" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
             <div class="iframe-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/V7HGRPZIvMA"
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/V7HGRPZIvMA"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -346,10 +315,10 @@
                     </form>
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                    <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.730723658561!2d73.77778967499243!3d15.498909785101056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc11093bed1d1%3A0x1a9ee192e2e18619!2scoco%20jetty!5e0!3m2!1sen!2sbd!4v1682788520186!5m2!1sen!2sbd"
+                        width="600" height="600" style="border:0;" allowfullscreen="true" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -370,7 +339,7 @@
             <div class="row" style="display: flex; justify-content: center; align-items: center;">
                 <div class="col-md-4 scuba-div" style="display: flex; justify-content: center; align-items: center;">
                     <div class="logo mb-4 bg-white">
-                        <a href="#"><img src="favicon.png" alt="scuba logo" loading="lazy"
+                        <a href="#"><img src="favicon2.ico" alt="scuba logo" loading="lazy"
                                 class="img-fluid bg-white scuba-logo"
                                 style="width: fit-content; height: 30vh; border-bottom: 2px solid #d5ae82; border-left: 2px solid #d5ae82;"></a>
                     </div>

@@ -75,8 +75,7 @@
     <!-- <script src="js/scroll-logo.js"></script> -->
 </head>
 
-<body class="overflow-auto bg-cover bg-fixed shadow-lg"
-    style="background-image:url('#'); background-position: center -80px; scroll-behavior: smooth; overflow-x: hidden !important;">
+<body class="overflow-auto bg-cover bg-fixed shadow-lg" style="scroll-behavior: smooth; overflow-x: hidden !important;">
 
     <!-- whatsapp popup start -->
     <div class="whatsapp-popup">
@@ -88,75 +87,44 @@
     <!-- whatsapp popup end -->
 
     <!-- navbar start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-lg-0" style="padding-right: 5rem !important;">
-            <img class="img-fluid phone-logo" src="favicon.png" alt="logo"
-                style="height: 12vh; background: white; margin-right: 1rem;">
-            <a href="index.html" class="navbar-brand p-0">
-                <!-- <h1 class="m-0" style="color: #06a3da; z-index: 2;">
-                    Scuba Diving
-                </h1> -->
-            </a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                fdprocessedid="3pd3i" aria-label="hamburger" title="hamburger">
-                <span class="fa fa-bars"></span>
-            </button> -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">HOME</a>
-                    <div class="nav-item dropdown">
-                        <a href="goa-tour-package.html" class="nav-link nav-item">GOA TOUR PACKAGE</a>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="goa-adventure.html" class="nav-link nav-item">GOA ADVENTURE</a>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-link nav-item">ABOUT US</a>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
-                </div>
-                <a href="#" class="btn btn-primary py-2 px-4 ms-3"
-                    onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
-            </div>
-
-            <button class="off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight" style="display: none; border: none;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
-                    alt="" style="width: 4vw !important; opacity: 0.8;">
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
-                style="max-width: 60vw !important;">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-                <div class="offcanvas-header py-4" style="padding-bottom: 0;">
-                    <div style="display: flex; flex-direction: column;">
-                        <h5 id="offcanvasRightLabel" style="color: #06A3DA;">Scuba Diving Center</h5>
-                        <img src="favicon.png" alt="" style="height: 20vh;">
-                    </div>
-                </div>
-                <div class="offcanvas-body" style="padding-left: 0; padding-top: 0;">
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 1rem;"><a href="index.html" style="color: black !important;">HOME</a>
-                        </li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="goa-tour-package.html"
-                                style="color: black !important;">GOA TOUR PACKAGE</a></li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="goa-adventure.html"
-                                style="color: black !important;">GOA ADVENTURE</a></li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="about.html" style="color: black !important;">ABOUT
-                                US</a></li>
-                        <hr>
-                        <li style="margin-bottom: 1rem;"><a href="contact.html" style="color: black !important;">CONTACT
-                                US</a></li>
-                        <li><a class="btn btn-primary" onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand" href="#"><img src="favicon.png" class="img-fluid logo-left" style="width: 4vw;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" style="gap: 2rem;">
+                <li class="nav-item active nav-logo" style="display: none;">
+                    <img class="img-fluid" src="favicon.png" alt="logo">
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="goa-tour-package.html">GOA TOUR PACKAGE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="goa-adventure.html">GOA ADVENTURE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary btn-book-now" href="#"
+                        onclick="callNumber('+91 8630905451'); return false">BOOK NOW</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="close navbar-toggler close-btn" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- navbar end -->
 
     <!-- bg image start -->
@@ -319,7 +287,7 @@
             <div class="row" style="display: flex; justify-content: center; align-items: center;">
                 <div class="col-md-4 scuba-div" style="display: flex; justify-content: center; align-items: center;">
                     <div class="logo mb-4 bg-white">
-                        <a href="#"><img src="favicon.png" alt="scuba logo" loading="lazy"
+                        <a href="#"><img src="favicon2.ico" alt="scuba logo" loading="lazy"
                                 class="img-fluid bg-white scuba-logo"
                                 style="width: fit-content; height: 30vh; border-bottom: 2px solid #d5ae82; border-left: 2px solid #d5ae82;"></a>
                     </div>
