@@ -1,3 +1,15 @@
+@media only screen and (max-width: 600px) {
+  .whatsapp-popup {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .whatsapp-popup img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .whatsapp-popup {
   position: fixed;
   bottom: 20px;
