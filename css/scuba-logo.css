@@ -1,9 +1,9 @@
 @media (max-width: 576px) {
   .scuba-logo {
-    height: 15vh !important;
+    height: 10vh !important;
     /* margin-right: 50vw; */
   }
-  
+
   .scuba-div {
     margin-right: 70vw;
   }
