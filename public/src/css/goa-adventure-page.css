@@ -157,7 +157,6 @@ body {
 }
 
 .call-to-book:hover {
-  border: 2px solid #d5ae82;
   color: white !important;
   background: black !important;
 }
