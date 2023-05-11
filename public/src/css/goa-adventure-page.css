@@ -257,3 +257,41 @@ ratings i {
 .mt-1.mb-1.spec-1 span i {
   margin-right: 0.2rem;
 }
+
+/* faqs start */
+#accordion-style-1 h1,
+#accordion-style-1 a {
+  color: #d5ae82;
+}
+#accordion-style-1 .btn-link {
+  font-weight: 400;
+  color: gray;
+  background-color: transparent;
+  text-decoration: none !important;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+#accordion-style-1 .card-body {
+  border-top: 2px solid #d5ae82;
+}
+
+#accordion-style-1 .card-header .btn.collapsed .fa.main {
+  display: none;
+}
+
+#accordion-style-1 .card-header .btn .fa.main {
+  background: #d5ae82;
+  padding: 13px 11px;
+  color: #ffffff;
+  width: 35px;
+  height: 41px;
+  position: absolute;
+  left: -1px;
+  top: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: block;
+}
+/* faqs end */
