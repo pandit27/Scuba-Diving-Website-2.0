@@ -2039,6 +2039,10 @@
         function callNumber(number) {
             window.location.href = 'tel:' + number;
         }
+        function smoothScroll(target) {
+            const element = document.getElementById(target);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 </body>
 
