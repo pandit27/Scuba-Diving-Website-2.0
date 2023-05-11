@@ -278,9 +278,9 @@
                                         <div class="dropdown-menu dropdown-menu-center w-100"
                                             aria-labelledby="water-sports-dropdown" style="background-color: #fff;">
                                             <h5 class="dropdown-header">Activities:</h5>
-                                            <a class="dropdown-item" href="#">Scuba diving</a>
-                                            <a class="dropdown-item" href="#">Parasailing</a>
-                                            <a class="dropdown-item" href="#">Jet skiing</a>
+                                            <a class="dropdown-item" href="#" onclick="smoothScroll('scuba-diving-pkg')">Scuba diving</a>
+                                            <a class="dropdown-item" href="#" onclick="smoothScroll('parasailing-pkg')">Parasailing</a>
+                                            <a class="dropdown-item" href="#" onclick="smoothScroll('jet-sking-package')">Jet skiing</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#" onclick="callNumber('+918630905451')">BOOK
                                                 NOW</a>
@@ -2039,7 +2039,7 @@
         function callNumber(number) {
             window.location.href = 'tel:' + number;
         }
-        function smoothScroll(target) {
+        function smoothscroll(target) {
             const element = document.getElementById(target);
             element.scrollIntoView({ behavior: 'smooth' });
         }
