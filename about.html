@@ -403,19 +403,19 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form action="https://formspree.io/f/xzbqyqqb" method="POST" target="_blank">
                         <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name"
-                                    style="height: 55px;">
+                            <div class="col-xl-12">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name"
+                                    style="height: 55px; border: 2px solid #06a3da">
                             </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
-                                    style="height: 55px;">
-                            </div>
-
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <input type="email" class="form-control" placeholder="Your Email" name="email"
+                                    style="height: 55px; border: 2px solid #06a3da">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-dark w-100 py-3" type="submit"
+                                    data-testid="submit-button">Submit</button>
                             </div>
                         </div>
                     </form>
