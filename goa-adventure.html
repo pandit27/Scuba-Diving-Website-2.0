@@ -278,9 +278,11 @@
                                         <div class="dropdown-menu dropdown-menu-center w-100"
                                             aria-labelledby="water-sports-dropdown" style="background-color: #fff;">
                                             <h5 class="dropdown-header">Activities:</h5>
-                                            <a class="dropdown-item" href="#" onclick="smoothScroll('scuba-diving-pkg')">Scuba diving</a>
-                                            <a class="dropdown-item" href="#" onclick="smoothScroll('parasailing-pkg')">Parasailing</a>
-                                            <a class="dropdown-item" href="#" onclick="smoothScroll('jet-sking-package')">Jet skiing</a>
+                                            <a class="dropdown-item" href="#scuba-diving-pkg"
+                                                onclick="smoothScroll(event)">Scuba diving</a>
+                                            <a class="dropdown-item" href="#parasailing-pkg"
+                                                onclick="smoothScroll(event)">Parasailing</a>
+                                            <a class="dropdown-item" onclick="smoothScroll(event)">Jet skiing</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#" onclick="callNumber('+918630905451')">BOOK
                                                 NOW</a>
@@ -850,7 +852,7 @@
                 </div>
                 <!-- package 6 end -->
                 <!-- package 7 start -->
-                <div class="row p-2 bg-white border rounded my-4"
+                <div id="scuba-diving-pkg" class="row p-2 bg-white border rounded my-4"
                     style="box-shadow: 1px 1px 10px 0 rgba(150, 143, 143, 0.295);">
                     <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
                             onmouseover="this.style.scale = '110%'" onmouseout="this.style.scale='100%'"
@@ -1285,7 +1287,7 @@
                             class="fa fa-phone-alt fa-2x"></i></a>
                 </div>
                 <div>
-                    <h1>Parasailing</h1>
+                    <h1 id="parasailing-pkg">Parasailing</h1>
                 </div>
                 <div>
                     <h2 style="font-family: 'Poppins', sans-serif; color: #d5ae82; font-size: 50px;">
@@ -2039,9 +2041,15 @@
         function callNumber(number) {
             window.location.href = 'tel:' + number;
         }
-        function smoothscroll(target) {
-            const element = document.getElementById(target);
-            element.scrollIntoView({ behavior: 'smooth' });
+        function smoothScroll(event) {
+            event.preventDefault();
+            const targetId = event.currentTarget.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            const offset = targetElement.offsetTop;
+            window.scrollTo({
+                top: offset,
+                behavior: "smooth"
+            });
         }
     </script>
 </body>
