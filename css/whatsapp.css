@@ -29,3 +29,14 @@
   border-radius: 50%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 750px) {
+  .whatsapp-popup img {
+    width: 13vw !important;
+  }
+}
+@media (max-width: 1154px) {
+  .whatsapp-popup img {
+    width: 10vw;
+  }
+}
