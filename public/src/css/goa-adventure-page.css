@@ -178,6 +178,10 @@ ratings i {
   width: 100%; */
 }
 
+@media (max-width: 600px) {
+
+}
+
 .spec-1 {
   color: #938787;
   font-size: 15px;
