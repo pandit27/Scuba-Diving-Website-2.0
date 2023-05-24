@@ -170,10 +170,9 @@ ratings i {
 }
 
 .product-image {
-  width: 100%;
-  height: max-content;
-  height: 20vh;
+  height: 25vh;
   width: 100vw;
+  object-fit: cover;
 }
 
 @media (max-width: 770px) {
