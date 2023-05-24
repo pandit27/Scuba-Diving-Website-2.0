@@ -177,7 +177,7 @@ ratings i {
 
 @media (max-width: 770px) {
   .product-image {
-    height: 30vh;
+    height: 20vh !important;
   }
 }
 
