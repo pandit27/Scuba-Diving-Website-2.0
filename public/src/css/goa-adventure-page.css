@@ -12,6 +12,22 @@ body {
 }
 /* necessary css to make page more responsive end */
 
+/* effects and animations start */
+.img_hover1 {
+  transition: filter 0.2s ease;
+}
+
+.img_hover1:hover {
+  filter: brightness(90%);
+}
+
+@media only screen and (max-width: 600px) {
+  .disp_none {
+    display: none !important;
+  }
+}
+/* effects and animations end */
+
 /* about us start */
 .img-border {
   position: relative;
@@ -61,11 +77,24 @@ body {
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-  background: #009cff !important;
+  background: #ffffffe8 !important;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item * {
-  color: #ffffff !important;
+.testimonial-carousel .owl-item.center .testimonial-item .star {
+  color: orange !important;
+}
+
+.testimonial-carousel .owl-item .testimonial-item {
+  background-color: #ffffffc3 !important;
+}
+
+.star {
+  color: orange;
+  margin-bottom: 2vh;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item p {
+  color: #000000ae !important;
 }
 
 .testimonial-carousel .owl-nav {
@@ -83,6 +112,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #dee2e6;
+  color: #ffffff;
   border-radius: 50px;
   font-size: 18px;
   transition: 0.5s;
@@ -172,7 +202,7 @@ ratings i {
 .product-image {
   height: 25vh;
   width: 100vw;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 @media (max-width: 770px) {
@@ -300,3 +330,199 @@ ratings i {
   display: block;
 }
 /* faqs end */
+
+/* hero section start */
+.ga-hero {
+  background: url("../../../img/ga2.webp") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* position: relative; */
+}
+
+.goa-adventure-text {
+  font-size: 90px;
+  /* text-shadow: 2px 2px 0 #f57ce58c; */
+}
+
+@media only screen and (max-width: 600px) {
+  .goa-adventure-text {
+    font-size: 48px !important;
+  }
+}
+
+.aa1 {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aa1 {
+    font-size: 25px !important;
+  }
+}
+
+.btn_ga_hero {
+  border-radius: 18px !important;
+}
+
+.btn_ga_hero:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: transparent;
+}
+/* hero section end */
+
+/* about section start */
+.call-now-about:hover {
+  background-color: #d5ae82;
+  color: #fff;
+  border-color: transparent;
+}
+/* about section end */
+
+/* package card start */
+.package_card {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin-left: 5vw;
+}
+
+@media (max-width: 600px) {
+  .package_card {
+    flex-direction: column;
+    gap: 4vh;
+  }
+}
+
+.card_gac {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card_gac:hover {
+  transform: scale(1.01);
+}
+
+.card_gac-img-top {
+  height: 200px;
+  width: 20vw;
+  object-fit: cover;
+}
+
+.card_gac-img-top:hover {
+  filter: grayscale(40%);
+}
+
+@media (max-width: 600px) {
+  .card_gac-img-top {
+    width: 100%;
+  }
+}
+
+.card_gac-body {
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.card_gac-title {
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+}
+
+.card_gac-price {
+  font-size: 32px;
+  color: #f96262;
+  /* margin-bottom: 20px; */
+}
+
+.card_gac-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card_gac-details li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.card_gac-details li i {
+  margin-right: 10px;
+  color: #f96262;
+}
+
+.btn_gac {
+  display: inline-block;
+  background-color: #f96262;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.btn_gac:hover {
+  background-color: #d5ae82;
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  .card_gac-body {
+    padding: 15px;
+  }
+
+  .card_gac-title {
+    font-size: 28px;
+  }
+
+  .card_gac-price {
+    font-size: 40px;
+    font-family: cursive;
+  }
+}
+
+@media (max-width: 600px) {
+  .package_card {
+    padding: 10px;
+    padding-top: 0;
+    margin-left: 1vw;
+  }
+}
+/* package card end */
+
+/* book now btn start */
+.btn-fixed {
+  position: fixed;
+  top: 50vh;
+  left: 89.8vw;
+  z-index: 99;
+  transform: rotate(270deg);
+  background-color: darkblue;
+  color: white;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+.btn-fixed:hover {
+  background-color: rgb(250, 33, 120);
+  border-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .btn-fixed {
+    display: none;
+  }
+}
+/* book now btn end */
+
+/* testimonials start */
+
+/* testimonials end */
