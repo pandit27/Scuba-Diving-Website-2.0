@@ -1,0 +1,23 @@
+.img_e:hover {
+  filter: brightness(80%);
+}
+
+.btn1 {
+  font-weight: 100 !important;
+  font-family: cursive !important;
+}
+
+.btn1:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid black !important;
+}
+
+.btn2 {
+  font-weight: 100 !important;
+  font-family: cursive !important;
+}
+
+.custom-dolphin {
+  color: #6c757d !important;
+}
