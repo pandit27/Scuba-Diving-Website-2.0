@@ -188,7 +188,7 @@
 
     <!-- video bg start -->
     <header class="tour-video"
-        style="width: 100vw; height: 90vh; background: url('img/andaman-scuba.webp'); object-fit: cover;">
+        style="width: 100vw; height: 90vh; background: url('img/andaman-scuba.webp'); background-repeat: no-repeat; background-size: cover; object-fit: cover;">
         <!-- <video autoplay muted loop>
             <source src="video/goa_2.mp4" type="video/mp4">
         </video> -->
@@ -196,7 +196,7 @@
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 m-auto text-white d-flex flex-column gap-2">
-                    <h1 class="display-3 text-white" style="font-size: 80px;">GOA TOUR PACKAGES</h1>
+                    <h1 class="display-3 text-white gtp_h1" style="font-size: 80px;">GOA TOUR PACKAGES</h1>
                     <p class="lead mb-0 text-white">Enjoy the beauty of Goa</p>
                     <a class="btn btn-primary py-2 px-4" style="width: fit-content; margin: auto; margin-top: 2rem;"
                         onclick="callNumber('+91 8076774256'); return false">BOOK NOW</a>
@@ -204,6 +204,14 @@
             </div>
         </div>
     </header>
+
+    <style>
+        @media(max-width: 600px) {
+            .gtp_h1 {
+                font-size: 60px !important;
+            }
+        }
+    </style>
     <!-- video bg end -->
 
     <!-- whatsapp popup start -->
